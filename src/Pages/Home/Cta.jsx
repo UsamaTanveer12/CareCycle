@@ -59,10 +59,10 @@ function Cta() {
   return (
     <>
       <div className="bg-[#f7f9fb]">
-        <div className="container mx-auto px-8 pb-20">
+        <div className="container mx-auto lg:px-8 px-4 lg:py-20 py-12">
           {/* Certifications Section */}
-          <div className="py-16">
-            <div className="container mx-auto px-8">
+         
+            
               <div className="text-center mb-12">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
                   Built for Regulation. Certified for Results.
@@ -115,12 +115,12 @@ function Cta() {
           </div>
 
           {/* Main CTA Section */}
-          <div className="py-20">
-            <div className="container mx-auto px-8">
-              <div className="bg-gradient-to-r from-[#579db3] to-[#4c7ba8] rounded-3xl p-12 relative overflow-hidden">
+         
+            <div className="container mx-auto lg:px-8 px-4 lg:py-20 py-12">
+              <div className="bg-gradient-to-r from-[#579db3] to-[#4c7ba8] rounded-3xl lg:p-12 p-8 relative overflow-hidden">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
                   <div className="text-white space-y-6">
-                    <h2 className="text-4xl font-bold leading-tight">
+                    <h2 className="lg:text-4xl text-2xl font-bold leading-tight">
                       Medical Billing Company That Delivers Real Results and Uplift Your Practice Revenue
                     </h2>
                     <p className="text-lg text-blue-100 leading-relaxed">
@@ -171,30 +171,30 @@ function Cta() {
                 </div>
               </div>
             </div>
-          </div>
+        
 
           {/* Why Choose Us Section */}
-          <div className="py-20 bg-gray-50">
-            <div className="container mx-auto px-8">
+          <div className="lg:py-20 py-12 bg-gray-50">
+            <div className="container mx-auto lg:px-8 px-4 lg:py-20 py-0">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
                 <div className="lg:col-span-5 space-y-8">
-                  <div>
-                    <span className="text-[#579db3] font-semibold text-sm tracking-wider uppercase">
+                  <div className="lg:text-left text-center">
+                    <span className="text-[#579db3] font-semibold lg:text-sm text-xs lg:text-left text-center tracking-wider uppercase">
                       Why Choose Us
                     </span>
-                    <h2 className="text-4xl font-bold text-gray-900 mt-4 leading-tight">
+                    <h2 className="lg:text-4xl text-2xl lg:text-left text-center font-bold text-gray-900 mt-4 leading-tight">
                       More Reasons to Choose Care Cycle Billing Services Company
                     </h2>
                   </div>
                   
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed lg:text-left text-center">
                     Choosing the right medical billing partner isn't just about outsourcing, it's about 
                     finding a trusted ally that understands the nuances of your practice. At Care Cycle 
                     Billing, we don't just process claims as projects – we approach revenue, reduce denials, 
                     and ensure every patient experience is reflected.
                   </p>
                   
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed lg:text-left text-center">
                     Our team operates as an extension of your front and back office, combining accuracy, 
                     speed, and compliance with regulatory care. What makes us different is how deeply we 
                     understand the needs of small practices and specialty providers. We offer real-time 
@@ -202,7 +202,7 @@ function Cta() {
                     and your business growing.
                   </p>
                   
-                  <div className="grid grid-cols-2 gap-4 pt-4">
+                  <div className="grid grid-cols-2 gap-4 pt-4 lg:text-left text-center">
                     {features.map((feature, index) => (
                       <div key={index} className="flex items-center gap-3">
                         <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0">
@@ -240,8 +240,8 @@ function Cta() {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      
+      
 
       <style jsx>{`
         @keyframes float {

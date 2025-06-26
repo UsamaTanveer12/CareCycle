@@ -57,9 +57,8 @@ function ConsultationForm() {
   };
 
   return (
-    <div className="container mx-auto px-8 py-20">
-      <div className="py-20">
-        <div className="container mx-auto px-8">
+  
+        <div className="container mx-auto lg:px-8 px-4 lg:py-20 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Form Section */}
             <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -171,7 +170,7 @@ function ConsultationForm() {
               </div>
 
               {/* Heading */}
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              <h2 className="lg:text-3xl text-2xl font-bold text-gray-900 mb-8">
                 Get a Free Billing Audit with No Strings Attached
               </h2>
 
@@ -189,8 +188,7 @@ function ConsultationForm() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            
        
    
  

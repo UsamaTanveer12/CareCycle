@@ -3,10 +3,10 @@ import { ArrowRight } from 'lucide-react';
 
 function Blog() {
   return (
-    <div className="container mx-auto px-8 py-20">
-      <div className="container mx-auto px-8">
+    <div className="container mx-auto lg:px-8 px-4 lg:py-20 py-12">
+      <div className="container mx-auto ">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="lg:text-4xl text-2xl lg:text-left text-center font-bold text-gray-900 mb-4">
             Latest Insights & Updates
           </h2>
           <p className="text-gray-700 text-lg max-w-3xl mx-auto">

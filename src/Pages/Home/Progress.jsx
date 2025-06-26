@@ -71,9 +71,9 @@ function ARProgress() {
 
   return (
     <div className="bg-gray-50 ">
-      <div className="container mx-auto px-8 py-20">
+      <div className="container mx-auto lg:px-8 px-4 lg:py-20 py-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="lg:text-4xl text-2xl font-bold text-gray-900 mb-6">
             A/R Management Designed for Faster Payouts
           </h2>
           <p className="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto">

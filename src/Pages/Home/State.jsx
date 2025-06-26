@@ -74,9 +74,9 @@ function State() {
   return (
     <>
       <div className="">
-        <div className="container mx-auto px-8 py-20">
+        <div className="container mx-auto lg:px-8 px-4 lg:py-20 py-12">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-8">Among The Top Medical Billing Companies in US</h2>
+            <h2 className="lg:text-4xl text-2xl font-bold text-gray-900 mb-8">Among The Top Medical Billing Companies in US</h2>
             <p className="text-gray-700 text-lg leading-relaxed max-w-6xl mx-auto">Whether you operate in California, Texas, Florida, New York, or beyond, our billing experts understand your local payer guidelines, Medicaid policies, and commercial insurer requirements. Being among the top medical billing companies in the US, we help providers stay ahead of state-level changes, from pre-auth requirements in Illinois to telehealth billing rules in Arizona so you can focus on patient care, not paperwork.</p>
           </div>
           <div className="flex justify-center relative">
