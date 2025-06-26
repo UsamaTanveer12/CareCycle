@@ -32,10 +32,10 @@ function Contact() {
             {/* Hero Section */}
             <div className="relative bg-gradient-to-br from-blue-50 via-gray-50 to-blue-100 py-20" style={{backgroundImage: 'url("/assets/group.webp")', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat'}}>
                 <div className="absolute inset-0 bg-[#fefefe]/90 bg-opacity-80"></div>
-                <div className="container mx-auto px-8 relative z-10">
+                <div className="container mx-auto lg:px-8 px-4 relative z-10">
                     <div className="text-center space-y-6">
                         <p className="text-green-500 font-semibold text-lg tracking-wider">Ready to Get Started?</p>
-                        <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">Get in Touch with Care Cycle Billing</h1>
+                        <h1 className="text-2xl lg:text-4xl font-bold text-gray-900">Get in Touch with Care Cycle Billing</h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Contact our expert team today to streamline your medical billing and maximize your revenue.
                         </p>
@@ -54,7 +54,7 @@ function Contact() {
 
             {/* Contact Information Cards */}
             <div className="py-16 bg-white">
-                <div className="container mx-auto px-8">
+                <div className="container mx-auto lg:px-8 px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Phone Number */}
                         <div className="text-center group hover:transform hover:scale-105 transition-all duration-300">
@@ -111,13 +111,13 @@ function Contact() {
 
             {/* Contact Form and Doctor Image Section */}
             <div className="py-16 bg-gray-50">
-                <div className="container mx-auto px-8">
+                <div className="container mx-auto lg:px-8 px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Form Section */}
                         <div>
                             <div className="mb-8">
-                                <h2 className="text-4xl font-bold text-gray-900 mb-4">Schedule a Consultation</h2>
-                                <p className="text-gray-600 text-lg">
+                                <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-4 text-center lg:text-left">Schedule a Consultation</h2>
+                                <p className="text-gray-600 text-lg text-center lg:text-left">
                                     Ready to optimize your medical billing? Fill out the form below and our team will get back to you within 24 hours.
                                 </p>
                             </div>

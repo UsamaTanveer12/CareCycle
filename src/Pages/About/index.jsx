@@ -10,10 +10,10 @@ function About() {
     <div>
       <div className="relative bg-gradient-to-br from-blue-50 via-gray-50 to-blue-100 py-20" style={{backgroundImage: 'url("/assets/group.webp")', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat'}}>
         <div className="absolute inset-0 bg-[#fefefe]/90 bg-opacity-80"></div>
-        <div className="container mx-auto px-8 relative z-10">
+        <div className="container mx-auto lg:px-8 px-4 relative z-10">
           <div className="text-center space-y-6">
             <p className="text-green-500 font-semibold text-lg tracking-wider">Built For Providers. Driven By Results.</p>
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">About Care Cycle Billing</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold text-gray-900">About Care Cycle Billing</h1>
             <div className="flex items-center justify-center gap-2 text-gray-700 mt-8">
               <Link to="/" className="font-medium hover:text-green-500 transition-colors cursor-pointer">
                 Home
@@ -27,11 +27,11 @@ function About() {
         </div>
       </div>
       
-      <div className="py-20 bg-white">
-        <div className="container mx-auto px-8">
+      <div className="lg:py-20 py-12 bg-white">
+        <div className="container mx-auto lg:px-8 px-4">
           <div className="text-center mb-16">
             <p className="text-[#579db3] text-lg font-medium mb-4">Where Accuracy, Compliance, and Results Come Standard</p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">Built for Solo Providers. Trusted by Growing.</h2>
+            <h2 className="text-2xl lg:text-4xl font-bold text-gray-900">Built for Solo Providers. Trusted by Growing.</h2>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -40,7 +40,7 @@ function About() {
                 <img alt="Medical team with doctor" className="w-full" src="/assets/about.webp" />
                 <div className="absolute bottom-6 left-6">
                   <div className="bg-black bg-opacity-90 text-white p-6 rounded-lg">
-                    <div className="text-4xl font-bold mb-1">100+</div>
+                    <div className="text-2xl font-bold mb-1">100+</div>
                     <div className="text-lg font-medium">Practices</div>
                   </div>
                 </div>

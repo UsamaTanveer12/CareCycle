@@ -10,9 +10,9 @@ function Service() {
     <>
     <div className="relative bg-gradient-to-br from-blue-50 via-gray-50 to-blue-100 py-20" style={{backgroundImage: 'url("/assets/service.webp")', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat'}}>
         <div className="absolute inset-0 bg-[#fefefe]/90 bg-opacity-80"></div>
-        <div className="container mx-auto px-8 relative z-10">
+        <div className="container mx-auto lg:px-8 px-4 relative z-10">
           <div className="text-center space-y-6">
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">Our Billing Services</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold text-gray-900">Our Billing Services</h1>
             <div className="flex items-center justify-center gap-2 text-gray-700 mt-8">
               <Link to="/" className="font-medium hover:text-green-500 transition-colors cursor-pointer">
                 Home
