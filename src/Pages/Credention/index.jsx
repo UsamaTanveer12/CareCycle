@@ -177,7 +177,7 @@ const Credentialing = () => {
               </div>
 
               <div className="pt-4">
-                <button className="bg-[#4a8ba0] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <button onClick={() => window.location.href = '/contact'} className="bg-[#4a8ba0] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-all duration-300 transform hover:scale-105 shadow-lg">
                   Secure Insurer Approvals!
                 </button>
               </div>
@@ -557,7 +557,7 @@ const Credentialing = () => {
             opportunities for faster reimbursements and improved claim accuracy at no cost, no commitment.
           </p>
 
-          <button className="bg-white text-[#579db3] px-8 py-4 rounded-xl font-bold hover:bg-[#579db3]/5 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <button onClick={() => window.location.href = '/contact'} className="bg-white text-[#579db3] px-8 py-4 rounded-xl font-bold hover:bg-[#579db3]/5 transition-all duration-300 transform hover:scale-105 shadow-lg">
             Get Your Free Audit Today
           </button>
         </div>
@@ -575,7 +575,7 @@ const Credentialing = () => {
             enrollment.
           </p>
 
-          <button className="bg-[#579db3] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#4a8ba0] transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#4a8ba0] transition-all duration-300 transform hover:scale-105 shadow-lg">
             Get Credentialed Now
           </button>
         </div>

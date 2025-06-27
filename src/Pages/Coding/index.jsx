@@ -229,7 +229,7 @@ const MedicalCodingPage = () => {
             </div>
 
             <div className="pt-4">
-              <button className="bg-[#4a8ba0] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button onClick={() => window.location.href = '/contact'} className="bg-[#4a8ba0] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Speak To Our Coding Experts
               </button>
             </div>
@@ -308,7 +308,7 @@ const MedicalCodingPage = () => {
                 With Care Cycle Billing LLC, your practice gains a strategic coding partner, not just a vendor. Let
                 us transform your medical coding from a cost center into a profit-protecting asset.
               </p>
-              <button className="bg-white text-[#579db3] px-6 py-3 rounded-lg font-semibold hover:bg-[#579db3]/5 transition-colors">
+              <button onClick={() => window.location.href = '/contact'} className="bg-white text-[#579db3] px-6 py-3 rounded-lg font-semibold hover:bg-[#579db3]/5 transition-colors">
                 Get Started Today
               </button>
             </div>
@@ -742,7 +742,7 @@ const MedicalCodingPage = () => {
             </div>
           </div>
 
-          <button className="bg-white text-[#579db3] px-8 py-4 rounded-xl font-bold hover:bg-[#579db3]/5 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <button onClick={() => window.location.href = '/contact'} className="bg-white text-[#579db3] px-8 py-4 rounded-xl font-bold hover:bg-[#579db3]/5 transition-all duration-300 transform hover:scale-105 shadow-lg">
             Get Your Free Audit Today
           </button>
         </div>

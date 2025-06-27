@@ -282,7 +282,7 @@ function Home() {
               </div>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <button className="bg-[#579db3] hover:bg-[#eb2978] cursor-pointer text-white font-bold px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 text-sm md:text-base">
+              <button onClick={() => window.location.href = '#consultation'} className="bg-[#579db3] hover:bg-[#eb2978] cursor-pointer text-white font-bold px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 text-sm md:text-base">
                 Claim Your Free Billing Audit!
               </button>
             </div>
@@ -505,7 +505,7 @@ function Home() {
                       defaultValue=""
                     />
                   </div>
-                  <button className="bg-[#579db3] w-full hover:bg-[#eb2978] text-[16px] lg:text-2xl cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+                  <button onClick={() => alert('Contact us for a detailed revenue analysis!')} className="bg-[#579db3] w-full hover:bg-[#eb2978] text-[16px] lg:text-2xl cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
                     Estimate Revenue Loss
                   </button>
                 </div>
@@ -543,7 +543,7 @@ function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed text-center lg:text-left">At Care Cycle Billing, we understand these pressures because we've helped practices just like yours turn them around. Whether you're a solo provider or managing multiple locations, we bring clarity, consistency, and control back to your revenue cycle.</p>
-              <button className="bg-[#579db3] w-fit hover:bg-[#eb2978] text-center lg:text-left cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">Get Your Free Revenue Review</button>
+              <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] w-fit hover:bg-[#eb2978] text-center lg:text-left cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">Get Your Free Revenue Review</button>
             </div>
           </div>
         </div>
@@ -728,7 +728,7 @@ function Home() {
                 With Care Cycle Billing, you gain a dedicated partner who knows how to collect both insurance and patient payments, stay compliant, and support your growth. We're built to scale with you whether you're a solo provider or a multi-specialty clinic.
               </p>
               
-              <button className="bg-[#579db3] hover:bg-[#4a8a9e] text-center lg:text-left text-white font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] hover:bg-[#4a8a9e] text-center lg:text-left text-white font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
                 Request Your Custom Quote
               </button>
             </div>

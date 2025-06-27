@@ -164,7 +164,7 @@ const MedicalBillingLanding = () => {
                   </li>
                 ))}
               </ul>
-              <button className="bg-[#579db3] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#4a8ba0] transition-colors">
+              <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#4a8ba0] transition-colors">
                 PROTECT YOUR REVENUE
               </button>
             </div>
@@ -247,7 +247,7 @@ const MedicalBillingLanding = () => {
           <p className="text-lg mb-8 text-blue-100">
             Our expert team fights to recover what you've earned. Get the reimbursements you deserve, hassle-free.
           </p>
-          <button className="bg-white text-[#579db3] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+          <button onClick={() => window.location.href = '/contact'} className="bg-white text-[#579db3] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
             SCHEDULE A FREE CONSULTATION
           </button>
         </div>

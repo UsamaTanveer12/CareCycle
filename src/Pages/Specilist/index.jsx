@@ -99,7 +99,7 @@ function Specialist() {
           <div className="text-center space-y-6 max-w-4xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">Specialized Medical Billing For Every Specialty</h1>
             <p className="text-gray-700 font-semibold text-base md:text-lg tracking-wider leading-relaxed">Every specialty has its own medical codes, payer rules, and workflow. We build a custom RCM strategy that actually fits your practice. Discover how Care Cycle Billing specialty-focused billing can improve your medical practice RCM objectives.</p>
-            <button className="bg-[#579db3] hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+            <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
                 TALK TO A BILLING EXPERT
             </button>
           </div>
@@ -147,6 +147,7 @@ function Specialist() {
                     </p>
                     <button 
                       type="button" 
+                      onClick={() => window.location.href = '/contact'}
                       className="bg-white text-[#579db3] border-white hover:bg-gray-50 hover:text-[#4a8a9e] hover:border-gray-50 font-semibold px-8 py-6 text-base rounded-lg transition-colors duration-200"
                     >
                       GET YOUR FREE BILLING ASSESSMENT
@@ -260,13 +261,13 @@ function Specialist() {
 
               {/* Description */}
               <p className="text-gray-700 text-lg leading-relaxed mb-12 max-w-[700px] ">
-               At Care Cycle Billing, our coders are more than certified. They’re specialty-trained. Each coder understands your field, from documentation to payer preferences, ensuring every claim speaks your clinical language fluently. 
+               At Care Cycle Billing, our coders are more than certified. They're specialty-trained. Each coder understands your field, from documentation to payer preferences, ensuring every claim speaks your clinical language fluently. 
 
 From complex CPT pairings to pre-auth management and smart appeal strategies, we apply intelligent coding logic tailored to your procedures. Our process is enhanced by real-time data patterns and compliance, reducing denials before they start.
 
 We integrate directly with your EHR system, eliminating disruption to your workflow. Our reporting dashboard shows real-time insights by provider, CPT group, payer mix, or location so you can take proactive actions.
 
-Let’s tailor your billing to your specialty. Talk to our experts today.
+Let's tailor your billing to your specialty. Talk to our experts today.
               </p>
 
               
@@ -370,7 +371,7 @@ Let’s tailor your billing to your specialty. Talk to our experts today.
 
                 {/* Submit Button */}
                 <div className="pt-4">
-                  <button class="bg-[#579db3] w-fit hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">SUBMIT</button>
+                  <button onClick={handleSubmit} className="bg-[#579db3] w-fit hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">SUBMIT</button>
                 </div>
               </div>
             </div>

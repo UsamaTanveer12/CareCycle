@@ -80,7 +80,7 @@ function About() {
               </p>
               
               <div className="pt-4">
-                <button className="bg-[#579db3] hover:bg-[#4a8a9e] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+                <button onClick={() => window.location.href = '/services'} className="bg-[#579db3] hover:bg-[#4a8a9e] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
                   Learn More
                 </button>
               </div>

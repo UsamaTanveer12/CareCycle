@@ -98,7 +98,7 @@ function Step() {
                 Let our certified experts handle your billing while you focus on patient care. 
                 Experience the difference of compliance-first, transparent revenue cycle management.
               </p>
-              <button className="bg-[#579db3] hover:bg-[#4a8ba0] text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] hover:bg-[#4a8ba0] text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                 Get Started Today
               </button>
             </div>

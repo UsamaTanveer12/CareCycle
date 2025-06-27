@@ -129,6 +129,7 @@ function Cta() {
                     </p>
                     <button 
                       type="button" 
+                      onClick={() => window.location.href = '/contact'}
                       className="bg-white text-[#579db3] border-white hover:bg-gray-50 hover:text-[#4a8a9e] hover:border-gray-50 font-semibold px-8 py-6 text-base rounded-lg transition-colors duration-200"
                     >
                       GET YOUR FREE BILLING ASSESSMENT

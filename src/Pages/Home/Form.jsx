@@ -155,7 +155,7 @@ function ConsultationForm() {
 
                 {/* Submit Button */}
                 <div className="pt-4">
-                  <button class="bg-[#579db3] w-fit hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">SUBMIT</button>
+                  <button onClick={handleSubmit} className="bg-[#579db3] w-fit hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">SUBMIT</button>
                 </div>
               </div>
             </div>

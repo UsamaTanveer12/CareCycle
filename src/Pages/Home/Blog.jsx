@@ -34,6 +34,7 @@ function Blog() {
                 </p>
                 <button 
                   type="button" 
+                  onClick={() => window.location.href = '/blog'}
                   className="p-0 h-auto text-[#579db3] hover:text-[#4a8a9e] font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all duration-300 self-start"
                 >
                   <span>LEARN MORE</span>
@@ -62,6 +63,7 @@ function Blog() {
                 </p>
                 <button 
                   type="button" 
+                  onClick={() => window.location.href = '/blog'}
                   className="p-0 h-auto text-[#579db3] hover:text-[#4a8a9e] font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all duration-300 self-start"
                 >
                   <span>LEARN MORE</span>
@@ -90,6 +92,7 @@ function Blog() {
                 </p>
                 <button 
                   type="button" 
+                  onClick={() => window.location.href = '/blog'}
                   className="p-0 h-auto text-[#579db3] hover:text-[#4a8a9e] font-semibold text-sm flex items-center gap-2 group-hover:gap-3 transition-all duration-300 self-start"
                 >
                   <span>LEARN MORE</span>
@@ -101,7 +104,7 @@ function Blog() {
         </div>
 
         <div className="flex justify-center mt-12">
-          <button className="bg-[#579db3] w-fit flex items-center gap-2 justify-center hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+          <button onClick={() => window.location.href = '/blog'} className="bg-[#579db3] w-fit flex items-center gap-2 justify-center hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
             View All Blog Posts
           </button>
         </div>
