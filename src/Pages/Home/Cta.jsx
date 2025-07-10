@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FileText, BarChart3, CheckCircle, Trophy, Clock, Users, Lightbulb, Zap, Box, Shield, ShieldCheck, ChartColumn } from 'lucide-react';
 
 function Cta() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  
   // Certification logos data
   const certifications = [
     { id: 1, alt: "HIPAA", src: "/assets/svg1.png" },
@@ -12,15 +10,6 @@ function Cta() {
     { id: 4, alt: "CPB Certified", src: "/assets/svg4.png" },
     { id: 5, alt: "CMS", src: "/assets/svg2.png" }
   ];
-
-  // Auto-slide functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % certifications.length);
-    }, 3000);
-    
-    return () => clearInterval(interval);
-  }, [certifications.length]);
 
   // Features data
   const features = [
@@ -74,42 +63,17 @@ function Cta() {
                 </p>
               </div>
               
-              {/* Carousel */}
-              <div className="relative overflow-hidden">
-                <div className="flex justify-center">
-                  <div 
-                    className="flex transition-transform duration-500 ease-in-out"
-                    style={{ 
-                      transform: `translateX(-${currentSlide * 250}px)`,
-                      width: `${certifications.length * 250}px`
-                    }}
-                  >
-                    {certifications.map((cert, index) => (
-                      <div key={cert.id} className="w-[250px] px-4 flex-shrink-0">
-                        <div className="flex justify-center items-center h-24">
-                          <img 
-                            alt={cert.alt}
-                            className="max-h-20 w-full object-contain hover:opacity-100 transition-opacity duration-300"
-                            src={cert.src}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                
-                {/* Carousel Indicators */}
-                <div className="flex justify-center mt-6 gap-2">
-                  {certifications.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentSlide(index)}
-                      className={`w-3 h-3 rounded-full transition-colors duration-200 ${
-                        currentSlide === index ? 'bg-[#579db3]' : 'bg-gray-300'
-                      }`}
+              {/* Logos Display */}
+              <div className="flex justify-between items-center flex-wrap">
+                {certifications.map((cert) => (
+                  <div key={cert.id} className="flex justify-center items-center h-24 px-6">
+                    <img 
+                      alt={cert.alt}
+                      className="max-h-20 w-auto object-contain hover:opacity-80 transition-opacity duration-300"
+                      src={cert.src}
                     />
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
