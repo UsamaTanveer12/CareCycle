@@ -12,13 +12,15 @@ import Contact from "./Pages/Contact"
 import Billing from "./Pages/Billing"
 import Coding from "./Pages/Coding"
 import Credentialing from "./Pages/Credention"
+import NotFound from "./Pages/NotFound"
+// import ScrollToTop from "./ScrollToTop";
 
 function App() {
 
   const router = createBrowserRouter([
     {
         path: "/",
-        element: <Layout />,
+        element: <Layout />, 
       children: [
         {
           path: "",
@@ -63,6 +65,10 @@ function App() {
         {
           path: "medical-credentialing",
           element: <Credentialing />  
+        },
+        {
+          path: "*",
+          element: <NotFound />
         }
 
 
@@ -71,7 +77,6 @@ function App() {
   ])
   return (
     <RouterProvider router={router} />
-   
   )
 }
 

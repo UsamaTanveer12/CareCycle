@@ -1,7 +1,25 @@
 import React from 'react';
-import { FileText, BarChart3, CheckCircle, Trophy, Clock, Users, Lightbulb, Zap, Box, Shield, ShieldCheck, ChartColumn } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { 
+  FileText, 
+  BarChart3, 
+  CheckCircle, 
+  Trophy, 
+  Clock, 
+  Shield, 
+  TrendingUp, 
+  Users, 
+  Award, 
+  Lightbulb,
+  Zap,
+  Box,
+  ShieldCheck,
+  ChartColumn,
+} from 'lucide-react';
 
 function Cta() {
+  const navigate = useNavigate();
+
   // Certification logos data
   const certifications = [
     { id: 1, alt: "HIPAA", src: "/assets/svg1.png" },
@@ -93,8 +111,8 @@ function Cta() {
                     </p>
                     <button 
                       type="button" 
-                      onClick={() => window.location.href = '/contact'}
-                      className="bg-white text-[#579db3] border-white hover:bg-gray-50 hover:text-[#4a8a9e] hover:border-gray-50 font-semibold px-8 py-6 text-base rounded-lg transition-colors duration-200"
+                      onClick={() => navigate('/contact')}
+                      className="bg-white text-[#579db3] border-white hover:bg-gray-50 hover:text-[#4a8a9e] hover:border-gray-50 font-semibold px-8 py-6 text-base rounded-lg transition-colors duration-200 cursor-pointer"
                     >
                       GET YOUR FREE BILLING ASSESSMENT
                     </button>

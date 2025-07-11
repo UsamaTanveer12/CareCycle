@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Carousel } from 'antd'
 import { CheckCircleOutlined } from '@ant-design/icons'
+import { useNavigate } from 'react-router-dom'
 import State from "./State";
 import Progress from "./Progress";
 import ConsultationForm from "./Form";
@@ -8,6 +9,7 @@ import Cta from "./Cta";
 import Blog from "./Blog";
 import MedicalBillingServices from "./HomeService";
 import { CheckCircle } from "lucide-react";
+import { Button } from "../../components";
 
 // Counter Component
 const CounterCard = ({ label, value, suffix, description, delay = 0 }) => {
@@ -80,6 +82,7 @@ const CounterCard = ({ label, value, suffix, description, delay = 0 }) => {
 };
 
 function Home() {
+  const navigate = useNavigate();
   const logos = [
     'logo1.png', 'logo2.png', 'logo3.png', 'logo4.png',
     'logo5.png', 'logo6.png', 'logo7.png', 'logo8.png', 'logo10.png'
@@ -282,9 +285,9 @@ function Home() {
               </div>
             </div>
             <div className="flex justify-center lg:justify-start">
-              <button onClick={() => window.location.href = '#consultation'} className="bg-[#579db3] hover:bg-[#eb2978] cursor-pointer text-white font-bold px-6 sm:px-8 md:px-10 py-3 md:py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 text-sm md:text-base">
+              <Button onClick={() => navigate('/about')} size="large">
                 Claim Your Free Billing Audit!
-              </button>
+              </Button>
             </div>
           </div>
           
@@ -505,9 +508,9 @@ function Home() {
                       defaultValue=""
                     />
                   </div>
-                  <button onClick={() => alert('Contact us for a detailed revenue analysis!')} className="bg-[#579db3] w-full hover:bg-[#eb2978] text-[16px] lg:text-2xl cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+                  <Button onClick={() => navigate('/contact')} fullWidth size="large">
                     Estimate Revenue Loss
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -543,7 +546,9 @@ function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed text-center lg:text-left">At Care Cycle Billing, we understand these pressures because we've helped practices just like yours turn them around. Whether you're a solo provider or managing multiple locations, we bring clarity, consistency, and control back to your revenue cycle.</p>
-              <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] w-fit hover:bg-[#eb2978] text-center lg:text-left cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">Get Your Free Revenue Review</button>
+              <Button onClick={() => navigate('/contact')} size="large">
+                Get Your Free Revenue Review
+              </Button>
             </div>
           </div>
         </div>
@@ -728,9 +733,9 @@ function Home() {
                 With Care Cycle Billing, you gain a dedicated partner who knows how to collect both insurance and patient payments, stay compliant, and support your growth. We're built to scale with you whether you're a solo provider or a multi-specialty clinic.
               </p>
               
-              <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] hover:bg-[#4a8a9e] text-center lg:text-left text-white font-bold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <Button onClick={() => navigate('/contact')}>
                 Request Your Custom Quote
-              </button>
+              </Button>
             </div>
             
             <div className="flex justify-center">

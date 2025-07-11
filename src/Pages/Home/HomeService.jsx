@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, Card } from 'antd';
+import { Card } from 'antd';
+import { useNavigate } from 'react-router-dom';
+import { Button } from "../../components";
 import { 
   Activity, 
   UserCheck, 
@@ -13,6 +15,7 @@ import {
 } from 'lucide-react';
 
 const MedicalBillingServices = () => {
+  const navigate = useNavigate();
   const specialties = [
     {
       title: "Physical Therapy",
@@ -218,13 +221,9 @@ const MedicalBillingServices = () => {
               />
               
               <Button 
-                type="primary" 
+                onClick={() => navigate('/services')}
                 size="large"
-                className="relative font-bold px-6 py-3 sm:px-8 sm:py-4 lg:px-12 lg:py-6 h-auto rounded-full shadow-xl sm:shadow-2xl border-0 text-sm sm:text-base lg:text-xl transition-all duration-300 hover:scale-105"
-                style={{ 
-                  backgroundColor: '#579db3',
-                  background: 'linear-gradient(135deg, #579db3 0%, #4a8ba0 100%)'
-                }}
+                className="relative"
               >
                 <span className="flex items-center gap-2">
                   <span className="hidden sm:inline">Explore Our Specialty Services</span>

@@ -1,11 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Tabs from "./Tabs"
-import Parallax from "./Paralex"
+import Paralex from "./Paralex"
 import Step from "./Step"
 import Doctor from "./Doctor"
+import { Button } from "../../components";
 
 function About() {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="relative bg-gradient-to-br from-blue-50 via-gray-50 to-blue-100 py-20" style={{backgroundImage: 'url("/assets/group.webp")', backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat'}}>
@@ -15,9 +17,9 @@ function About() {
             <p className="text-green-500 font-semibold text-lg tracking-wider">Built For Providers. Driven By Results.</p>
             <h1 className="text-2xl lg:text-4xl font-bold text-gray-900">About Care Cycle Billing</h1>
             <div className="flex items-center justify-center gap-2 text-gray-700 mt-8">
-              <Link to="/" className="font-medium hover:text-green-500 transition-colors cursor-pointer">
+              <span className="font-medium hover:text-green-500 transition-colors cursor-pointer">
                 Home
-              </Link>
+              </span>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chevron-right w-4 h-4 text-gray-500" aria-hidden="true">
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
@@ -80,9 +82,9 @@ function About() {
               </p>
               
               <div className="pt-4">
-                <button onClick={() => window.location.href = '/services'} className="bg-[#579db3] hover:bg-[#4a8a9e] text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">
+                <Button onClick={() => navigate('/services')} size="large">
                   Learn More
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -93,7 +95,7 @@ function About() {
         <Tabs />  
       </div>
       <div>
-        <Parallax />
+        <Paralex />
       </div>
       <div>
         <Step />

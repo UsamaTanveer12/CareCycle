@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ChevronDown, ChevronUp, CheckCircle, Users, ClipboardList, BarChart3, Phone, Mail } from 'lucide-react';
+import { Button } from "../../components";
 
 const MedicalBillingLanding = () => {
+  const navigate = useNavigate();
   const [openAccordion, setOpenAccordion] = useState(null);
   const [formData, setFormData] = useState({
     fullName: '',
@@ -124,7 +127,7 @@ const MedicalBillingLanding = () => {
               <p className="text-lg mb-8 text-blue-100">
                 Let's be honest: 35% of claim denials happen simply because billing teams don't know each insurer's secret rules. At Care Cycle Billing LLC, our specialists live in the complexities of Medicare's ever-changing LCDs to UnitedHealthcare's prior auth maze. We don't just submit claims - we engineer them knowing exactly how to navigate.
               </p>
-              <button className="bg-white text-[#579db3] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <button onClick={() => navigate('/contact')} className="bg-white text-[#579db3] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer">
                 TALK TO AN EXPERT
               </button>
             </div>
@@ -164,9 +167,9 @@ const MedicalBillingLanding = () => {
                   </li>
                 ))}
               </ul>
-              <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#4a8ba0] transition-colors">
+              <Button onClick={() => navigate('/contact')}>
                 PROTECT YOUR REVENUE
-              </button>
+              </Button>
             </div>
             <div className="space-y-4">
               {specialtyStats.map((specialty, index) => (
@@ -247,7 +250,7 @@ const MedicalBillingLanding = () => {
           <p className="text-lg mb-8 text-blue-100">
             Our expert team fights to recover what you've earned. Get the reimbursements you deserve, hassle-free.
           </p>
-          <button onClick={() => window.location.href = '/contact'} className="bg-white text-[#579db3] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+          <button onClick={() => navigate('/contact')} className="bg-white text-[#579db3] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer">
             SCHEDULE A FREE CONSULTATION
           </button>
         </div>
@@ -360,12 +363,9 @@ const MedicalBillingLanding = () => {
                   By submitting this, I agree to the Terms & Conditions
                 </label>
               </div>
-              <button
-                type="submit"
-                className="w-full bg-[#579db3] text-white py-3 px-6 rounded-lg font-semibold hover:bg-[#4a8ba0] transition-colors"
-              >
+              <Button type="submit" fullWidth size="large">
                 SUBMIT
-              </button>
+              </Button>
             </div>
           </div>
         </div>

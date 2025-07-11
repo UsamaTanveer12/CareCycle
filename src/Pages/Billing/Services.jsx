@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   FileText, 
   Layers, 
@@ -13,6 +14,7 @@ import {
 } from 'lucide-react';
 
 function Services() {
+  const navigate = useNavigate();
   const [activeService, setActiveService] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
@@ -253,7 +255,10 @@ function Services() {
                 Join hundreds of practices already maximizing their revenue with our comprehensive solution.
               </p>
               
-              <button className="group bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 mx-auto">
+              <button 
+                onClick={() => navigate('/contact')} 
+                className="group bg-white text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 mx-auto cursor-pointer"
+              >
                 Start Your Success Story
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>

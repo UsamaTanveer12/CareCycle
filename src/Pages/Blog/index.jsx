@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Calendar, Clock, User, Tag } from 'lucide-react';
+import { Button } from "../../components";
 
 function Blog() {
+  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState('All');
   
   const blogPosts = [
@@ -155,7 +158,7 @@ function Blog() {
                 placeholder="Enter your email address"
                 className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <button onClick={() => alert('Newsletter subscription coming soon!')} className="px-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg" style={{backgroundColor: '#579db3'}}>
+              <button onClick={() => navigate('/contact')} className="px-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg cursor-pointer" style={{backgroundColor: '#579db3'}}>
                 Subscribe
               </button>
             </div>
@@ -221,10 +224,10 @@ function Blog() {
                     </div>
                   </div>
                 </div>
-                <button onClick={() => alert('Full article coming soon!')} className="self-start px-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg flex items-center gap-2" style={{backgroundColor: '#579db3'}}>
+                <Button onClick={() => navigate('/contact')} size="small" className="self-start flex items-center gap-2">
                   Read Full Article
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </Button>
               </div>
             </div>
           </div>
@@ -277,8 +280,8 @@ function Blog() {
                         </div>
                         <button 
                           type="button" 
-                          onClick={() => alert('Article coming soon!')}
-                          className="text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all duration-300"
+                          onClick={() => navigate('/contact')}
+                          className="text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all duration-300 cursor-pointer"
                           style={{color: '#579db3'}}
                         >
                           <span>READ MORE</span>
@@ -301,23 +304,22 @@ function Blog() {
               <p className="text-gray-600 mb-4">
                 We don't have any articles in the "{activeCategory}" category yet.
               </p>
-              <button 
+              <Button 
                 onClick={() => setActiveCategory('All')}
-                className="px-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg"
-                style={{backgroundColor: '#579db3'}}
+                size="small"
               >
                 View All Articles
-              </button>
+              </Button>
             </div>
           )}
         </div>
 
         {/* Load More Button */}
         <div className="flex justify-center">
-          <button onClick={() => alert('More articles loading soon!')} className="w-fit flex items-center gap-3 justify-center text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105" style={{backgroundColor: '#579db3'}}>
+          <Button onClick={() => navigate('/contact')} size="large" className="flex items-center gap-3">
             <span>Load More Articles</span>
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </Button>
         </div>
       </div>
     </div>

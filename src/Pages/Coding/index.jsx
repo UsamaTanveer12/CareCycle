@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import {
   CheckCircle,
   Shield,
@@ -20,8 +21,10 @@ import {
   Search,
   Database,
 } from "lucide-react"
+import { Button } from "../../components";
 
 const MedicalCodingPage = () => {
+  const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState(0)
   const [selectedSpecialty, setSelectedSpecialty] = useState("")
 
@@ -229,9 +232,9 @@ const MedicalCodingPage = () => {
             </div>
 
             <div className="pt-4">
-              <button onClick={() => window.location.href = '/contact'} className="bg-[#4a8ba0] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <Button onClick={() => navigate('/contact')} size="large">
                 Speak To Our Coding Experts
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -308,9 +311,9 @@ const MedicalCodingPage = () => {
                 With Care Cycle Billing LLC, your practice gains a strategic coding partner, not just a vendor. Let
                 us transform your medical coding from a cost center into a profit-protecting asset.
               </p>
-              <button onClick={() => window.location.href = '/contact'} className="bg-white text-[#579db3] px-6 py-3 rounded-lg font-semibold hover:bg-[#579db3]/5 transition-colors">
+              <Button onClick={() => navigate('/contact')} size="large">
                 Get Started Today
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -742,9 +745,9 @@ const MedicalCodingPage = () => {
             </div>
           </div>
 
-          <button onClick={() => window.location.href = '/contact'} className="bg-white text-[#579db3] px-8 py-4 rounded-xl font-bold hover:bg-[#579db3]/5 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <Button onClick={() => navigate('/contact')} type="secondary">
             Get Your Free Audit Today
-          </button>
+          </Button>
         </div>
       </div>
       <div className="py-20">

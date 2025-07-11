@@ -1,7 +1,9 @@
 import { ArrowRight, CheckCircle, TrendingUp, Stethoscope, Heart, Activity } from "lucide-react";
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function About() {
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
@@ -148,7 +150,10 @@ function About() {
                   This isn't just "billing services" - this is the roadmap to your practice's financial success.
                 </p>
                 
-                <button className="group bg-gradient-to-r from-[#579db3] to-[#4a8ba3] text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-3">
+                <button 
+                  onClick={() => navigate('/contact')} 
+                  className="group bg-gradient-to-r from-[#579db3] to-[#4a8ba3] text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-3 cursor-pointer"
+                >
                   Get Started Today
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>

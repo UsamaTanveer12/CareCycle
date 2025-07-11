@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Button } from "../../components";
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -250,14 +251,14 @@ function Contact() {
                                 </div>
 
                                 {/* Submit Button */}
-                                <button
+                                <Button
                                     type="submit"
-                                    className="w-full md:w-auto px-8 py-3 text-white font-semibold rounded-lg hover:bg-green-500 transition-all duration-300 flex items-center justify-center gap-2 group"
-                                    style={{backgroundColor: '#579db3'}}
+                                    fullWidth
+                                    className="flex items-center justify-center gap-2 group"
                                 >
                                     <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     SUBMIT
-                                </button>
+                                </Button>
                             </div>
                         </div>
 

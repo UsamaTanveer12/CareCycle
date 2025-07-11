@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom"
 import Special from "./Special";
 import Service from "./Service";
+import { Button } from "../../components";
 
 
 
@@ -99,9 +100,9 @@ function Specialist() {
           <div className="text-center space-y-6 max-w-4xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">Specialized Medical Billing For Every Specialty</h1>
             <p className="text-gray-700 font-semibold text-base md:text-lg tracking-wider leading-relaxed">Every specialty has its own medical codes, payer rules, and workflow. We build a custom RCM strategy that actually fits your practice. Discover how Care Cycle Billing specialty-focused billing can improve your medical practice RCM objectives.</p>
-            <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+            <Button onClick={() => window.location.href = '/contact'} size="large">
                 TALK TO A BILLING EXPERT
-            </button>
+            </Button>
           </div>
         </div>
     </div>
@@ -371,7 +372,7 @@ Let's tailor your billing to your specialty. Talk to our experts today.
 
                 {/* Submit Button */}
                 <div className="pt-4">
-                  <button onClick={handleSubmit} className="bg-[#579db3] w-fit hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">SUBMIT</button>
+                  <Button onClick={handleSubmit} size="large">SUBMIT</Button>
                 </div>
               </div>
             </div>

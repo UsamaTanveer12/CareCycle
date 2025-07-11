@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { CheckCircle, Shield, TrendingUp, Users, Clock, Award } from 'lucide-react';
+import { Button } from "../../components";
 
 function Step() {
+  const navigate = useNavigate();
   const steps = [
     {
       number: "01",
@@ -98,9 +102,9 @@ function Step() {
                 Let our certified experts handle your billing while you focus on patient care. 
                 Experience the difference of compliance-first, transparent revenue cycle management.
               </p>
-              <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] hover:bg-[#4a8ba0] text-white font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <Button onClick={() => navigate('/contact')} size="large">
                 Get Started Today
-              </button>
+              </Button>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from '../../components/Button'
 
 function Accordion() {
   const [openIndex, setOpenIndex] = useState(0) // First item open by default
@@ -61,7 +62,7 @@ function Accordion() {
                 </p>
               </div>
               <div className="pt-4">
-                <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] w-fit flex gap-2 hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+                <Button onClick={() => window.location.href = '/contact'} size="large" className="flex gap-2">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     width="24" 
@@ -78,7 +79,7 @@ function Accordion() {
                     <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1 2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path>
                   </svg>
                   SPEAK TO AN EXPERT TODAY
-                </button>
+                </Button>
               </div>
             </div>
             

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import {
   CheckCircle,
   Shield,
@@ -22,9 +23,11 @@ import {
   RefreshCw,
   Globe,
 } from "lucide-react"
+import { Button } from "../../components";
 
 const Credentialing = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState("")
+  const navigate = useNavigate()
 
   const credentialingBenefits = [
     {
@@ -177,7 +180,7 @@ const Credentialing = () => {
               </div>
 
               <div className="pt-4">
-                <button onClick={() => window.location.href = '/contact'} className="bg-[#4a8ba0] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <button onClick={() => navigate('/contact')} className="bg-[#4a8ba0] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer">
                   Secure Insurer Approvals!
                 </button>
               </div>
@@ -536,12 +539,9 @@ const Credentialing = () => {
                 <span className="text-sm text-gray-600">By submitting this, I agree to the Terms & Conditions.</span>
               </div>
 
-              <button
-                type="submit"
-                className="w-full bg-[#4a8ba0] text-white py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-colors"
-              >
+              <Button type="submit" fullWidth>
                 Schedule Consultation
-              </button>
+              </Button>
             </form>
           </div>
         </div>
@@ -557,9 +557,9 @@ const Credentialing = () => {
             opportunities for faster reimbursements and improved claim accuracy at no cost, no commitment.
           </p>
 
-          <button onClick={() => window.location.href = '/contact'} className="bg-white text-[#579db3] px-8 py-4 rounded-xl font-bold hover:bg-[#579db3]/5 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <Button onClick={() => navigate('/contact')} type="secondary">
             Get Your Free Audit Today
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -575,9 +575,9 @@ const Credentialing = () => {
             enrollment.
           </p>
 
-          <button onClick={() => window.location.href = '/contact'} className="bg-[#579db3] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#4a8ba0] transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <Button onClick={() => navigate('/contact')} size="large">
             Get Credentialed Now
-          </button>
+          </Button>
         </div>
       </div>
 

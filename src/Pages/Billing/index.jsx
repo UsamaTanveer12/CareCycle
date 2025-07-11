@@ -3,6 +3,7 @@ import CounterSection from "./counter";
 import About from "./About";
 import Services from "./Services";
 import MedicalBillingLanding from "./Other";
+import { Button } from "../../components";
 
 function Billing() {
   return (
@@ -31,15 +32,9 @@ function Billing() {
               paperwork shouldn't hold you back. Care Cycle Billing LLC secures your 
               revenue reliably and efficiently so you can get back to medicine, not paperwork.
             </p>
-            <button 
-              className="px-8 py-4 rounded-full border-2 text-white font-semibold hover:bg-opacity-90 transition-all duration-300 text-lg"
-              style={{ 
-                backgroundColor: '#579db3', 
-                borderColor: '#579db3'
-              }}
-            >
+            <Button size="large">
               Claim Your Free Audit
-            </button>
+            </Button>
           </div>
 
           {/* Right Column - Image */}

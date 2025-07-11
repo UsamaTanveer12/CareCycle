@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Button } from "../../components";
 
 function Parallax() {
+  const navigate = useNavigate();
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -40,9 +43,12 @@ function Parallax() {
                 Care Cycle Billing helps practices run smoother, get paid faster, and grow stronger.
               </p>
               <div className="pt-4">
-                <button className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                <Button 
+                  onClick={() => navigate('/contact')} 
+                  type="secondary"
+                >
                   Schedule Your Free Consultation
-                </button>
+                </Button>
               </div>
             </div>
           </div>

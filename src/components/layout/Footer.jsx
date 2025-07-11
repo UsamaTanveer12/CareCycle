@@ -64,20 +64,21 @@ function Footer() {
                     Medical Credentialing Services
                   </Link>
                 </li>
-                <li>
-                  <Link 
-                    className="text-white hover:text-[#eb2978] transition-colors text-sm sm:text-base block py-1" 
-                    to="/provider-credentialing"
-                  >
-                    Provider Credentialing
-                  </Link>
-                </li>
+                
                 <li>
                   <Link 
                     className="text-white hover:text-[#eb2978] transition-colors text-sm sm:text-base block py-1" 
                     to="/terms-conditions"
                   >
                     Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link 
+                    className="text-white hover:text-[#eb2978] transition-colors text-sm sm:text-base block py-1" 
+                    to="/privacy-policy"
+                  >
+                    Privacy Policy
                   </Link>
                 </li>
               </ul>
@@ -119,14 +120,7 @@ function Footer() {
                     Contact Us
                   </Link>
                 </li>
-                <li>
-                  <Link 
-                    className="text-white hover:text-[#eb2978] transition-colors text-sm sm:text-base block py-1" 
-                    to="/privacy-policy"
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
+                
               </ul>
             </div>
             

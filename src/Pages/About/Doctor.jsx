@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Doctor() {
+  const navigate = useNavigate();
   const features = [
     {
       icon: (
@@ -98,7 +100,7 @@ function Doctor() {
                   <p className="text-gray-600 text-sm">
                     Join practices nationwide who trust us with their revenue cycle.
                   </p>
-                  <button onClick={() => window.location.href = '/contact'} className="w-full bg-[#579db3] hover:bg-[#4a8ba0] text-white font-semibold py-3 px-6 rounded-full transition-all duration-300">
+                  <button onClick={() => navigate('/contact')} className="w-full bg-[#579db3] hover:bg-[#4a8ba0] text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 cursor-pointer">
                     Schedule Consultation
                   </button>
                 </div>

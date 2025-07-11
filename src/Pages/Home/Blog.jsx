@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Button } from "../../components";
 
 function Blog() {
   return (
@@ -104,9 +105,9 @@ function Blog() {
         </div>
 
         <div className="flex justify-center mt-12">
-          <button onClick={() => window.location.href = '/blog'} className="bg-[#579db3] w-fit flex items-center gap-2 justify-center hover:bg-[#eb2978] cursor-pointer text-white font-bold px-10 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105">
+          <Button onClick={() => window.location.href = '/blog'} size="large" className="flex items-center gap-2">
             View All Blog Posts
-          </button>
+          </Button>
         </div>
       </div>
     </div>

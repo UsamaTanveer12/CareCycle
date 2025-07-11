@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Button } from "../../components";
 
 function Para() {
+  const navigate = useNavigate();
+  
   return (
     <div>
       <div 
@@ -20,9 +24,12 @@ function Para() {
               Let's Build a smarter revenue cycle for your practice and get started with Care Cycle Billing today.
             </p>
             <div className="pt-4">
-              <button className="bg-white text-gray-900 hover:bg-gray-100 font-semibold px-8 py-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <Button 
+                onClick={() => navigate('/contact')} 
+                type="secondary"
+              >
                 Contact Us Now
-              </button>
+              </Button>
             </div>
           </div>
         </div>
