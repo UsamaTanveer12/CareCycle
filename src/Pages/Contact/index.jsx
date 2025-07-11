@@ -34,6 +34,10 @@ function Contact() {
             ...prev,
             [name]: type === 'checkbox' ? checked : value
         }));
+        setErrors(prev => ({
+            ...prev,
+            [name]: undefined
+        }));
     };
 
     const handleSubmit = (e) => {

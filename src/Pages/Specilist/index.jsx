@@ -55,6 +55,10 @@ function Specialist() {
             ...prev,
             [field]: value
           }));
+          setErrors(prev => ({
+            ...prev,
+            [field]: undefined
+          }));
         };
       
         const [errors, setErrors] = useState({});

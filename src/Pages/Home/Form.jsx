@@ -48,6 +48,10 @@ function ConsultationForm() {
       ...prev,
       [field]: value
     }));
+    setErrors(prev => ({
+      ...prev,
+      [field]: undefined
+    }));
   };
 
   const validate = () => {
