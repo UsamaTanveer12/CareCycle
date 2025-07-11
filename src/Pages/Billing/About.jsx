@@ -47,7 +47,7 @@ function About() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left side - New Doctor Design */}
-            <div className={`relative transform transition-all duration-1000 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
+            <div className={`relative transform transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
               <div className="relative w-full max-w-lg mx-auto">
                 
                 {/* Main hexagonal container */}
@@ -118,7 +118,7 @@ function About() {
             </div>
             
             {/* Right side - Content */}
-            <div className={`space-y-8 transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
+            <div className={`space-y-8 transform transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
               <div>
                 <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                   Medical Billing That 
@@ -134,7 +134,7 @@ function About() {
                 {benefits.map((benefit, index) => (
                   <div 
                     key={index}
-                    className={`flex items-center gap-4 transform transition-all duration-500 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}
+                    className={`flex items-center gap-4 transform transition-all duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
                     style={{transitionDelay: `${500 + index * 100}ms`}}
                   >
                     <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-[#579db3] to-[#4a8ba3] rounded-full flex items-center justify-center shadow-lg">

@@ -157,7 +157,7 @@ function Services() {
         {/* Interactive Services Showcase */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left - Featured Service Display */}
-          <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : '-translate-x-20 opacity-0'}`}>
+          <div className={`transform transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
             <div className="relative">
               {/* Main featured card */}
               <div className={`relative p-8 rounded-3xl shadow-2xl transform transition-all duration-500 ${services[activeService].lightBg} border border-white/50`}>
@@ -193,7 +193,7 @@ function Services() {
           </div>
 
           {/* Right - Service Navigation */}
-          <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-20 opacity-0'}`}>
+          <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
             <div className="space-y-4">
               {services.map((service, index) => (
                 <div
