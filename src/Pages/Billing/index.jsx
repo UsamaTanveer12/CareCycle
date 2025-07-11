@@ -4,6 +4,7 @@ import About from "./About";
 import Services from "./Services";
 import MedicalBillingLanding from "./Other";
 import { Button } from "../../components";
+import ConsultationForm from '../Home/Form';
 
 function Billing() {
   return (
@@ -24,7 +25,7 @@ function Billing() {
           <div className="space-y-6">
             <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
               Medical Billing Services For{' '}
-              <span style={{ color: '#579db3' }}>Small Practices</span>
+              <span style={{ color: '#579db3' }}>Small Practssices</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
               Your small practice runs on care, not claims, but billing headaches are stealing 
@@ -62,7 +63,7 @@ function Billing() {
         <Services />
       </div>
       <div>
-        <MedicalBillingLanding />
+        <ConsultationForm />
       </div>
       
       

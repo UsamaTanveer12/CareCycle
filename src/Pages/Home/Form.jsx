@@ -18,6 +18,8 @@ function ConsultationForm() {
     agreeTerms: false
   });
 
+  const [errors, setErrors] = useState({});
+
   const specialtyOptions = [
     'Cardiology',
     'Dermatology',
@@ -48,13 +50,24 @@ function ConsultationForm() {
     }));
   };
 
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.specialty) newErrors.specialty = 'Specialty is required';
+    if (!formData.healthcareType) newErrors.healthcareType = 'Healthcare Type is required';
+    if (!formData.fullName) newErrors.fullName = 'Full Name is required';
+    if (!formData.email) newErrors.email = 'Email is required';
+    if (!formData.phone) newErrors.phone = 'Phone is required';
+    if (!formData.message) newErrors.message = 'Message is required';
+    if (!formData.agreeTerms) newErrors.agreeTerms = 'You must agree to the Terms & Conditions';
+    return newErrors;
+  };
+
   const handleSubmit = () => {
-    if (formData.agreeTerms) {
-      console.log('Form submitted:', formData);
-      // Handle form submission here
-    } else {
-      alert('Please agree to the Terms & Conditions');
-    }
+    const validationErrors = validate();
+    setErrors(validationErrors);
+    if (Object.keys(validationErrors).length > 0) return;
+    console.log('Form submitted:', formData);
+    // Handle form submission here
   };
 
   return (
@@ -81,6 +94,7 @@ function ConsultationForm() {
                       <Option key={option} value={option}>{option}</Option>
                     ))}
                   </Select>
+                  {errors.specialty && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.specialty}</div>}
                 </div>
 
                 {/* Healthcare Type Select */}
@@ -96,40 +110,52 @@ function ConsultationForm() {
                       <Option key={option} value={option}>{option}</Option>
                     ))}
                   </Select>
+                  {errors.healthcareType && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.healthcareType}</div>}
                 </div>
 
                 {/* Name and Email */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input
-                    size="large"
-                    placeholder="Full Name"
-                    value={formData.fullName}
-                    onChange={(e) => handleInputChange('fullName', e.target.value)}
-                  />
-                  <Input
-                    size="large"
-                    type="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={(e) => handleInputChange('email', e.target.value)}
-                  />
+                  <div>
+                    <Input
+                      size="large"
+                      placeholder="Full Name"
+                      value={formData.fullName}
+                      onChange={(e) => handleInputChange('fullName', e.target.value)}
+                    />
+                    {errors.fullName && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.fullName}</div>}
+                  </div>
+                  <div>
+                    <Input
+                      size="large"
+                      type="email"
+                      placeholder="Email"
+                      value={formData.email}
+                      onChange={(e) => handleInputChange('email', e.target.value)}
+                    />
+                    {errors.email && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.email}</div>}
+                  </div>
                 </div>
 
                 {/* Phone and Website */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input
-                    size="large"
-                    type="tel"
-                    placeholder="Phone"
-                    value={formData.phone}
-                    onChange={(e) => handleInputChange('phone', e.target.value)}
-                  />
-                  <Input
-                    size="large"
-                    placeholder="Website (Optional)"
-                    value={formData.website}
-                    onChange={(e) => handleInputChange('website', e.target.value)}
-                  />
+                  <div>
+                    <Input
+                      size="large"
+                      type="tel"
+                      placeholder="Phone"
+                      value={formData.phone}
+                      onChange={(e) => handleInputChange('phone', e.target.value)}
+                    />
+                    {errors.phone && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.phone}</div>}
+                  </div>
+                  <div>
+                    <Input
+                      size="large"
+                      placeholder="Website (Optional)"
+                      value={formData.website}
+                      onChange={(e) => handleInputChange('website', e.target.value)}
+                    />
+                  </div>
                 </div>
 
                 {/* Message */}
@@ -141,6 +167,7 @@ function ConsultationForm() {
                     value={formData.message}
                     onChange={(e) => handleInputChange('message', e.target.value)}
                   />
+                  {errors.message && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.message}</div>}
                 </div>
 
                 {/* Terms Checkbox */}
@@ -152,6 +179,7 @@ function ConsultationForm() {
                   >
                     By submitting this, I agree to the Terms & Conditions.
                   </Checkbox>
+                  {errors.agreeTerms && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.agreeTerms}</div>}
                 </div>
 
                 {/* Submit Button */}

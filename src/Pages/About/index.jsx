@@ -4,6 +4,7 @@ import Tabs from "./Tabs"
 import Paralex from "./Paralex"
 import Step from "./Step"
 import Doctor from "./Doctor"
+import ConsultationForm from '../Home/Form';
 import { Button } from "../../components";
 
 function About() {
@@ -102,6 +103,9 @@ function About() {
       </div>
       <div>
         <Doctor />
+      </div>
+      <div>
+        <ConsultationForm />
       </div>
     </div>
   )

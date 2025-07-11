@@ -14,6 +14,20 @@ function Contact() {
         agreed: false
     });
 
+    const [errors, setErrors] = useState({});
+
+    const validate = () => {
+        const newErrors = {};
+        if (!formData.specialty) newErrors.specialty = 'Specialty is required';
+        if (!formData.healthcareType) newErrors.healthcareType = 'Healthcare Type is required';
+        if (!formData.fullName) newErrors.fullName = 'Full Name is required';
+        if (!formData.email) newErrors.email = 'Email is required';
+        if (!formData.phone) newErrors.phone = 'Phone is required';
+        if (!formData.message) newErrors.message = 'Message is required';
+        if (!formData.agreed) newErrors.agreed = 'You must agree to the Terms & Conditions';
+        return newErrors;
+    };
+
     const handleInputChange = (e) => {
         const { name, value, type, checked } = e.target;
         setFormData(prev => ({
@@ -24,6 +38,9 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const validationErrors = validate();
+        setErrors(validationErrors);
+        if (Object.keys(validationErrors).length > 0) return;
         console.log('Form submitted:', formData);
         // Handle form submission logic here
     };
@@ -143,6 +160,7 @@ function Contact() {
                                         <option value="pediatrics">Pediatrics</option>
                                         <option value="other">Other</option>
                                     </select>
+                                    {errors.specialty && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.specialty}</div>}
                                 </div>
 
                                 {/* Healthcare Type Dropdown */}
@@ -163,71 +181,86 @@ function Contact() {
                                         <option value="clinic">Clinic</option>
                                         <option value="group-practice">Group Practice</option>
                                     </select>
+                                    {errors.healthcareType && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.healthcareType}</div>}
                                 </div>
 
                                 {/* Name and Email Row */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <input
-                                        type="text"
-                                        name="fullName"
-                                        placeholder="Full Name"
-                                        value={formData.fullName}
-                                        onChange={handleInputChange}
-                                        className="px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300"
-                                        onFocus={(e) => e.target.style.borderColor = '#579db3'}
-                                        onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
-                                        required
-                                    />
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        placeholder="Email"
-                                        value={formData.email}
-                                        onChange={handleInputChange}
-                                        className="px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300"
-                                        onFocus={(e) => e.target.style.borderColor = '#579db3'}
-                                        onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
-                                        required
-                                    />
+                                    <div>
+                                        <input
+                                            type="text"
+                                            name="fullName"
+                                            placeholder="Full Name"
+                                            value={formData.fullName}
+                                            onChange={handleInputChange}
+                                            className="px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300"
+                                            onFocus={(e) => e.target.style.borderColor = '#579db3'}
+                                            onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
+                                            required
+                                        />
+                                        {errors.fullName && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.fullName}</div>}
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Email"
+                                            value={formData.email}
+                                            onChange={handleInputChange}
+                                            className="px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300"
+                                            onFocus={(e) => e.target.style.borderColor = '#579db3'}
+                                            onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
+                                            required
+                                        />
+                                        {errors.email && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.email}</div>}
+                                    </div>
                                 </div>
 
                                 {/* Phone and Website Row */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        placeholder="Phone"
-                                        value={formData.phone}
-                                        onChange={handleInputChange}
-                                        className="px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300"
-                                        onFocus={(e) => e.target.style.borderColor = '#579db3'}
-                                        onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
-                                        required
-                                    />
-                                    <input
-                                        type="url"
-                                        name="website"
-                                        placeholder="Website (Optional)"
-                                        value={formData.website}
-                                        onChange={handleInputChange}
-                                        className="px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300"
-                                        onFocus={(e) => e.target.style.borderColor = '#579db3'}
-                                        onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
-                                    />
+                                    <div>
+                                        <input
+                                            type="tel"
+                                            name="phone"
+                                            placeholder="Phone"
+                                            value={formData.phone}
+                                            onChange={handleInputChange}
+                                            className="px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300"
+                                            onFocus={(e) => e.target.style.borderColor = '#579db3'}
+                                            onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
+                                            required
+                                        />
+                                        {errors.phone && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.phone}</div>}
+                                    </div>
+                                    <div>
+                                        <input
+                                            type="url"
+                                            name="website"
+                                            placeholder="Website (Optional)"
+                                            value={formData.website}
+                                            onChange={handleInputChange}
+                                            className="px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300"
+                                            onFocus={(e) => e.target.style.borderColor = '#579db3'}
+                                            onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
+                                        />
+                                    </div>
                                 </div>
 
                                 {/* Message */}
-                                <textarea
-                                    name="message"
-                                    placeholder="Write your Message here..."
-                                    rows="4"
-                                    value={formData.message}
-                                    onChange={handleInputChange}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300 resize-vertical"
-                                    onFocus={(e) => e.target.style.borderColor = '#579db3'}
-                                    onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
-                                    required
-                                ></textarea>
+                                <div>
+                                    <textarea
+                                        name="message"
+                                        placeholder="Write your Message here..."
+                                        rows="4"
+                                        value={formData.message}
+                                        onChange={handleInputChange}
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg transition-all duration-300 resize-vertical"
+                                        onFocus={(e) => e.target.style.borderColor = '#579db3'}
+                                        onBlur={(e) => e.target.style.borderColor = '#d1d5db'}
+                                        required
+                                    ></textarea>
+                                    {errors.message && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.message}</div>}
+                                </div>
 
                                 {/* Terms Checkbox */}
                                 <div className="flex items-start space-x-3">
@@ -248,6 +281,7 @@ function Contact() {
                                         </a>
                                         .
                                     </label>
+                                    {errors.agreed && <div style={{color: 'red', fontSize: 13, marginTop: 4, marginLeft: 8}}>{errors.agreed}</div>}
                                 </div>
 
                                 {/* Submit Button */}

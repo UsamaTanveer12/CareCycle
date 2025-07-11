@@ -94,7 +94,7 @@ function Step() {
 
           {/* Bottom Call-to-Action Section - Responsive */}
           <div className="text-center mt-12 sm:mt-16 lg:mt-20">
-            <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-12 max-w-4xl mx-auto">
+            <div className=" rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-12 max-w-4xl mx-auto">
               <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Ready to Optimize Your Revenue Cycle?
               </h3>

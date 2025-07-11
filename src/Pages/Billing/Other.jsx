@@ -14,6 +14,7 @@ const MedicalBillingLanding = () => {
     healthcareType: '',
     message: ''
   });
+  const [errors, setErrors] = useState({});
 
   const toggleAccordion = (index) => {
     setOpenAccordion(openAccordion === index ? null : index);
@@ -26,8 +27,22 @@ const MedicalBillingLanding = () => {
     });
   };
 
+  const validate = () => {
+    const newErrors = {};
+    if (!formData.fullName) newErrors.fullName = 'Full Name is required';
+    if (!formData.email) newErrors.email = 'Email is required';
+    if (!formData.phone) newErrors.phone = 'Phone is required';
+    if (!formData.specialty) newErrors.specialty = 'Specialty is required';
+    if (!formData.healthcareType) newErrors.healthcareType = 'Healthcare Type is required';
+    if (!formData.message) newErrors.message = 'Message is required';
+    return newErrors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    const validationErrors = validate();
+    setErrors(validationErrors);
+    if (Object.keys(validationErrors).length > 0) return;
     console.log('Form submitted:', formData);
     alert('Consultation request submitted successfully!');
   };
@@ -276,6 +291,7 @@ const MedicalBillingLanding = () => {
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-transparent"
                   />
+                  {errors.fullName && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.fullName}</div>}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -288,6 +304,7 @@ const MedicalBillingLanding = () => {
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-transparent"
                   />
+                  {errors.email && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.email}</div>}
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-6">
@@ -303,6 +320,7 @@ const MedicalBillingLanding = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-transparent"
                     placeholder="Enter your phone number"
                   />
+                  {errors.phone && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.phone}</div>}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -312,15 +330,18 @@ const MedicalBillingLanding = () => {
                     name="healthcareType"
                     value={formData.healthcareType}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-transparent"
-                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-transparent mb-6"
                   >
-                    <option value="">Select Healthcare Type</option>
-                    <option value="primary-care">Primary Care</option>
-                    <option value="specialty">Specialty Practice</option>
-                    <option value="mental-health">Mental Health</option>
-                    <option value="other">Other</option>
+                    <option value="">Select a healthcare type</option>
+                    <option value="Solo Practice">Solo Practice</option>
+                    <option value="Group Practice">Group Practice</option>
+                    <option value="Hospital">Hospital</option>
+                    <option value="Clinic">Clinic</option>
+                    <option value="Specialty Center">Specialty Center</option>
+                    <option value="Urgent Care">Urgent Care</option>
+                    <option value="Other">Other</option>
                   </select>
+                  {errors.healthcareType && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.healthcareType}</div>}
                 </div>
               </div>
               <div>
@@ -340,6 +361,7 @@ const MedicalBillingLanding = () => {
                   <option value="orthopedics">Orthopedics</option>
                   <option value="other">Other</option>
                 </select>
+                {errors.specialty && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.specialty}</div>}
                 <label className="block text-sm font-medium text-gray-700 mb-2">
                   Write your Message here...
                 </label>
@@ -351,6 +373,7 @@ const MedicalBillingLanding = () => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-transparent"
                   placeholder="Tell us about your billing challenges..."
                 ></textarea>
+                {errors.message && <div style={{color: 'red', fontSize: 13, marginTop: 4}}>{errors.message}</div>}
               </div>
               <div className="flex items-center">
                 <input

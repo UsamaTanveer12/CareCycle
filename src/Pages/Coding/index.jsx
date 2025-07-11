@@ -22,11 +22,11 @@ import {
   Database,
 } from "lucide-react"
 import { Button } from "../../components";
+import ConsultationForm from '../Home/Form';
 
 const MedicalCodingPage = () => {
   const navigate = useNavigate()
   const [activeTab, setActiveTab] = useState(0)
-  const [selectedSpecialty, setSelectedSpecialty] = useState("")
 
   const benefits = [
     {
@@ -177,86 +177,88 @@ const MedicalCodingPage = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-[#f3f8fe]">
-      {/* Hero Section */}
-      <div className="bg-[#f3f8fe] py-20 relative">
-      {/* Decorative elements inside the main container */}
-      <div className="absolute top-20 left-16 w-20 h-20 bg-blue-200 opacity-20 rounded-full"></div>
-      <div className="absolute top-32 right-32 w-16 h-16 bg-purple-200 opacity-15 rounded-full"></div>
-      <div className="absolute bottom-32 left-32 w-24 h-24 bg-green-200 opacity-10 rounded-full"></div>
-      <div className="absolute top-1/3 left-1/5 w-12 h-12 bg-blue-300 opacity-25 transform rotate-45"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-8 h-8 bg-purple-300 opacity-20 transform rotate-12"></div>
-      <div className="absolute top-1/2 right-1/6 w-6 h-6 bg-green-300 opacity-30 rounded-full"></div>
-      
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8">
-            <div className="space-y-6">
-              <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
-                Trusted Medical Coding Services That Eliminate Errors & Boost Compliance
-              </h1>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Miscoded claims aren't just billing errors, they're revenue killers. A single ICD-10 or CPT coding
-                mistake can trigger claim denials, delay payments, or even expose your hospital to audit risks. At
-                Care Cycle Billing LLC, we fix the root problem: AAPC-certified coders meticulously translate your
-                clinical documentation into 100% accurate, audit-proof codes so you get paid faster and stay
-                compliant.
-              </p>
+    <div>
+      <div className="min-h-screen bg-[#f3f8fe]">
+        {/* Hero Section */}
+        <div className="bg-[#f3f8fe] py-20 relative">
+        {/* Decorative elements inside the main container */}
+        <div className="absolute top-20 left-16 w-20 h-20 bg-blue-200 opacity-20 rounded-full"></div>
+        <div className="absolute top-32 right-32 w-16 h-16 bg-purple-200 opacity-15 rounded-full"></div>
+        <div className="absolute bottom-32 left-32 w-24 h-24 bg-green-200 opacity-10 rounded-full"></div>
+        <div className="absolute top-1/3 left-1/5 w-12 h-12 bg-blue-300 opacity-25 transform rotate-45"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-8 h-8 bg-purple-300 opacity-20 transform rotate-12"></div>
+        <div className="absolute top-1/2 right-1/6 w-6 h-6 bg-green-300 opacity-30 rounded-full"></div>
+        
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 leading-tight">
+                  Trusted Medical Coding Services That Eliminate Errors & Boost Compliance
+                </h1>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Miscoded claims aren't just billing errors, they're revenue killers. A single ICD-10 or CPT coding
+                  mistake can trigger claim denials, delay payments, or even expose your hospital to audit risks. At
+                  Care Cycle Billing LLC, we fix the root problem: AAPC-certified coders meticulously translate your
+                  clinical documentation into 100% accurate, audit-proof codes so you get paid faster and stay
+                  compliant.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-center space-x-3">
+                  <div className="bg-[#579db3] rounded-full p-1">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <span className="text-gray-700 font-medium">AAPC-certified coding specialists</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="bg-[#579db3] rounded-full p-1">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <span className="text-gray-700 font-medium">24/7 coding compliance monitoring</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="bg-[#579db3] rounded-full p-1">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <span className="text-gray-700 font-medium">100% OIG audit-ready coding</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <div className="bg-[#579db3] rounded-full p-1">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <span className="text-gray-700 font-medium">Zero-error guarantee</span>
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <Button onClick={() => navigate('/contact')} size="large">
+                  Speak To Our Coding Experts
+                </Button>
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="flex items-center space-x-3">
-                <div className="bg-[#579db3] rounded-full p-1">
-                  <CheckCircle className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-gray-700 font-medium">AAPC-certified coding specialists</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="bg-[#579db3] rounded-full p-1">
-                  <CheckCircle className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-gray-700 font-medium">24/7 coding compliance monitoring</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="bg-[#579db3] rounded-full p-1">
-                  <CheckCircle className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-gray-700 font-medium">100% OIG audit-ready coding</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <div className="bg-[#579db3] rounded-full p-1">
-                  <CheckCircle className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-gray-700 font-medium">Zero-error guarantee</span>
-              </div>
-            </div>
+            <div className="relative flex justify-center">
+              <div className="relative">
+                <div className="w-96 h-96 bg-gradient-to-br from-[#579db3] to-[#3d7a8c] rounded-full relative overflow-hidden">
+                  <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-white rounded-full"></div>
+                  <div className="absolute top-1/4 right-8 w-3 h-3 bg-white rounded-full"></div>
+                  <div className="absolute top-1/2 right-4 w-3 h-3 bg-white rounded-full"></div>
+                  <div className="absolute bottom-1/4 right-8 w-3 h-3 bg-white rounded-full"></div>
+                  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-white rounded-full"></div>
+                  <div className="absolute bottom-1/4 left-8 w-3 h-3 bg-white rounded-full"></div>
+                  <div className="absolute top-1/2 left-4 w-3 h-3 bg-white rounded-full"></div>
+                  <div className="absolute top-1/4 left-8 w-3 h-3 bg-white rounded-full"></div>
 
-            <div className="pt-4">
-              <Button onClick={() => navigate('/contact')} size="large">
-                Speak To Our Coding Experts
-              </Button>
-            </div>
-          </div>
-
-          <div className="relative flex justify-center">
-            <div className="relative">
-              <div className="w-96 h-96 bg-gradient-to-br from-[#579db3] to-[#3d7a8c] rounded-full relative overflow-hidden">
-                <div className="absolute top-8 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-white rounded-full"></div>
-                <div className="absolute top-1/4 right-8 w-3 h-3 bg-white rounded-full"></div>
-                <div className="absolute top-1/2 right-4 w-3 h-3 bg-white rounded-full"></div>
-                <div className="absolute bottom-1/4 right-8 w-3 h-3 bg-white rounded-full"></div>
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-white rounded-full"></div>
-                <div className="absolute bottom-1/4 left-8 w-3 h-3 bg-white rounded-full"></div>
-                <div className="absolute top-1/2 left-4 w-3 h-3 bg-white rounded-full"></div>
-                <div className="absolute top-1/4 left-8 w-3 h-3 bg-white rounded-full"></div>
-
-                <div className="absolute inset-8 bg-gradient-to-br from-white/20 to-white/5 rounded-full flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Stethoscope className="w-16 h-16 text-white" />
+                  <div className="absolute inset-8 bg-gradient-to-br from-white/20 to-white/5 rounded-full flex items-center justify-center">
+                    <div className="text-center text-white">
+                      <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Stethoscope className="w-16 h-16 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold">Medical Coding</h3>
+                      <p className="text-sm opacity-80">Expert Services</p>
                     </div>
-                    <h3 className="text-xl font-bold">Medical Coding</h3>
-                    <p className="text-sm opacity-80">Expert Services</p>
                   </div>
                 </div>
               </div>
@@ -264,7 +266,6 @@ const MedicalCodingPage = () => {
           </div>
         </div>
       </div>
-    </div>
 
       {/* Why Precise Medical Coding Section */}
       <div className="py-20 bg-white">
@@ -777,110 +778,7 @@ const MedicalCodingPage = () => {
         </div>
       </div>
       {/* Contact Form Section */}
-      <div className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Ready to Transform Your Medical Coding & Boost Revenue?
-            </h2>
-            <p className="text-xl text-gray-600">
-              Speak to Our Certified Coding Experts Today! Get a FREE Coding Assessment & Discover How Much Revenue
-              You're Losing
-            </p>
-          </div>
-
-          <div className="bg-[#f3f8fe] rounded-2xl p-8">
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Specialty</label>
-                  <select
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                    value={selectedSpecialty}
-                    onChange={(e) => setSelectedSpecialty(e.target.value)}
-                  >
-                    <option value="">Please select a specialty</option>
-                    <option value="cardiology">Cardiology</option>
-                    <option value="orthopedics">Orthopedics</option>
-                    <option value="emergency">Emergency Medicine</option>
-                    <option value="family">Family Practice</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Services</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]">
-                    <option value="">Select Healthcare Type</option>
-                    <option value="hospital">Hospital</option>
-                    <option value="clinic">Clinic</option>
-                    <option value="practice">Private Practice</option>
-                    <option value="asc">ASC</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                  <input
-                    type="tel"
-                    placeholder="Phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Website</label>
-                  <input
-                    type="url"
-                    placeholder="Website (Optional)"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea
-                  rows={4}
-                  placeholder="Write your Message here..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                ></textarea>
-              </div>
-
-              <div className="flex items-center">
-                <input type="checkbox" className="mr-2" />
-                <span className="text-sm text-gray-600">By submitting this, I agree to the Terms & Conditions.</span>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-[#4a8ba0] text-white py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-colors"
-              >
-                Schedule a Consultation
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
+   
 
       {/* Free Billing Audit CTA */}
      
@@ -942,7 +840,8 @@ const MedicalCodingPage = () => {
         </div>
       </div> */}
     </div>
-  )
+  </div>
+)
 }
 
 export default MedicalCodingPage

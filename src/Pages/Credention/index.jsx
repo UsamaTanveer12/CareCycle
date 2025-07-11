@@ -24,6 +24,7 @@ import {
   Globe,
 } from "lucide-react"
 import { Button } from "../../components";
+import ConsultationForm from '../Home/Form';
 
 const Credentialing = () => {
   const [selectedSpecialty, setSelectedSpecialty] = useState("")
@@ -180,9 +181,9 @@ const Credentialing = () => {
               </div>
 
               <div className="pt-4">
-                <button onClick={() => navigate('/contact')} className="bg-[#4a8ba0] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#3d7a8c] transition-all duration-300 transform hover:scale-105 shadow-lg cursor-pointer">
+                <Button onClick={() => navigate('/contact')}>
                   Secure Insurer Approvals!
-                </button>
+                </Button>
               </div>
             </div>
 
@@ -451,117 +452,10 @@ const Credentialing = () => {
       </div>
 
       {/* Contact Form Section */}
-      <div className="py-20 bg-[#f3f8fe]">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Schedule a Consultation</h2>
-          </div>
-
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <form className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Specialty</label>
-                  <select
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                    value={selectedSpecialty}
-                    onChange={(e) => setSelectedSpecialty(e.target.value)}
-                  >
-                    <option value="">Please select a specialty</option>
-                    <option value="physician">Physician (MD/DO)</option>
-                    <option value="np">Nurse Practitioner</option>
-                    <option value="pa">Physician Assistant</option>
-                    <option value="dentist">Dentist</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Services</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]">
-                    <option value="">Select Healthcare Type</option>
-                    <option value="hospital">Hospital</option>
-                    <option value="clinic">Clinic</option>
-                    <option value="practice">Private Practice</option>
-                    <option value="group">Group Practice</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                  <input
-                    type="text"
-                    placeholder="Full Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                  />
-                </div>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                  <input
-                    type="tel"
-                    placeholder="Phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Website</label>
-                  <input
-                    type="url"
-                    placeholder="Website (Optional)"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea
-                  rows={4}
-                  placeholder="Write your Message here..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3]"
-                ></textarea>
-              </div>
-
-              <div className="flex items-center">
-                <input type="checkbox" className="mr-2" />
-                <span className="text-sm text-gray-600">By submitting this, I agree to the Terms & Conditions.</span>
-              </div>
-
-              <Button type="submit" fullWidth>
-                Schedule Consultation
-              </Button>
-            </form>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Free Billing Audit CTA */}
-      <div className="py-20 bg-gradient-to-br from-[#579db3] to-[#3d7a8c]">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Get a Free Billing Audit with No Strings Attached</h2>
-          <p className="text-xl text-white/80 mb-8 max-w-3xl mx-auto">
-            Unlock the true potential of your revenue cycle with a free consultation and billing audit from CareCycle
-            Medical Billing. We'll review your current billing workflow, identify revenue leaks, and uncover
-            opportunities for faster reimbursements and improved claim accuracy at no cost, no commitment.
-          </p>
-
-          <Button onClick={() => navigate('/contact')} type="secondary">
-            Get Your Free Audit Today
-          </Button>
-        </div>
-      </div>
+      
 
       {/* Final CTA Section */}
       <div className="py-20 bg-white">
@@ -580,8 +474,7 @@ const Credentialing = () => {
           </Button>
         </div>
       </div>
-
-      
+      <ConsultationForm />
       
     </div>
   )
