@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Select, Input, Checkbox } from 'antd';
 import { CalendarOutlined, SendOutlined } from '@ant-design/icons';
 import { Button as CustomButton } from "../../components";
+import { sendEmail } from '../../utils/emailService';
 
 const { TextArea } = Input;
 const { Option } = Select;
@@ -19,6 +20,8 @@ function ConsultationForm() {
   });
 
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState('');
 
   const specialtyOptions = [
     'Cardiology',
@@ -66,12 +69,37 @@ function ConsultationForm() {
     return newErrors;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const validationErrors = validate();
     setErrors(validationErrors);
     if (Object.keys(validationErrors).length > 0) return;
-    console.log('Form submitted:', formData);
-    // Handle form submission here
+    
+    setIsSubmitting(true);
+    setSubmitMessage('');
+    
+    try {
+      const result = await sendEmail(formData);
+      if (result.success) {
+        setSubmitMessage('Thank you! Your consultation request has been sent successfully. We will get back to you within 24 hours.');
+        // Reset form
+        setFormData({
+          specialty: '',
+          healthcareType: '',
+          fullName: '',
+          email: '',
+          phone: '',
+          website: '',
+          message: '',
+          agreeTerms: false
+        });
+      } else {
+        setSubmitMessage('Sorry, there was an error sending your request. Please try again or contact us directly.');
+      }
+    } catch (error) {
+      setSubmitMessage('Sorry, there was an error sending your request. Please try again or contact us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -188,8 +216,25 @@ function ConsultationForm() {
 
                 {/* Submit Button */}
                 <div className="pt-4">
-                  <CustomButton onClick={handleSubmit} size="large">SUBMIT</CustomButton>
+                  <CustomButton 
+                    onClick={handleSubmit} 
+                    size="large"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? 'SENDING...' : 'SUBMIT'}
+                  </CustomButton>
                 </div>
+
+                {/* Success/Error Message */}
+                {submitMessage && (
+                  <div className={`p-4 rounded-lg text-center ${
+                    submitMessage.includes('Thank you') 
+                      ? 'bg-green-100 text-green-700 border border-green-300' 
+                      : 'bg-red-100 text-red-700 border border-red-300'
+                  }`}>
+                    {submitMessage}
+                  </div>
+                )}
               </div>
             </div>
 

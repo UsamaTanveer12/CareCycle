@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 import { Button } from "../../components";
+import { sendEmail } from '../../utils/emailService';
 
 function Contact() {
     const [formData, setFormData] = useState({
@@ -15,6 +16,8 @@ function Contact() {
     });
 
     const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitMessage, setSubmitMessage] = useState('');
 
     const validate = () => {
         const newErrors = {};
@@ -40,13 +43,38 @@ function Contact() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const validationErrors = validate();
         setErrors(validationErrors);
         if (Object.keys(validationErrors).length > 0) return;
-        console.log('Form submitted:', formData);
-        // Handle form submission logic here
+        
+        setIsSubmitting(true);
+        setSubmitMessage('');
+        
+        try {
+            const result = await sendEmail(formData);
+            if (result.success) {
+                setSubmitMessage('Thank you! Your consultation request has been sent successfully. We will get back to you within 24 hours.');
+                // Reset form
+                setFormData({
+                    specialty: '',
+                    healthcareType: '',
+                    fullName: '',
+                    email: '',
+                    phone: '',
+                    website: '',
+                    message: '',
+                    agreed: false
+                });
+            } else {
+                setSubmitMessage('Sorry, there was an error sending your request. Please try again or contact us directly.');
+            }
+        } catch (error) {
+            setSubmitMessage('Sorry, there was an error sending your request. Please try again or contact us directly.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -144,7 +172,7 @@ function Contact() {
                                 </p>
                             </div>
 
-                            <div onSubmit={handleSubmit} className="space-y-6">
+                            <form onSubmit={handleSubmit} className="space-y-6">
                                 {/* Specialty Dropdown */}
                                 <div>
                                     <select
@@ -293,11 +321,23 @@ function Contact() {
                                     type="submit"
                                     fullWidth
                                     className="flex items-center justify-center gap-2 group"
+                                    disabled={isSubmitting}
                                 >
                                     <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                                    SUBMIT
+                                    {isSubmitting ? 'SENDING...' : 'SUBMIT'}
                                 </Button>
-                            </div>
+
+                                {/* Success/Error Message */}
+                                {submitMessage && (
+                                    <div className={`p-4 rounded-lg text-center ${
+                                        submitMessage.includes('Thank you') 
+                                            ? 'bg-green-100 text-green-700 border border-green-300' 
+                                            : 'bg-red-100 text-red-700 border border-red-300'
+                                    }`}>
+                                        {submitMessage}
+                                    </div>
+                                )}
+                            </form>
                         </div>
 
                         {/* Doctor Image Section */}
