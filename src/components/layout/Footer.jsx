@@ -162,10 +162,9 @@ function Footer() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                   </svg>
                   <div className="text-center sm:text-left">
-                    <p className="font-medium text-white text-sm sm:text-base">Head Office</p>
+                    <p className="font-medium text-white text-sm sm:text-base">Monday – Friday</p>
                     <p className="text-white text-sm sm:text-base leading-relaxed">
-                      5900 Balcones drive #13461,<br className="hidden sm:inline" />
-                      <span className="sm:hidden"> </span>Austin, TX, 78731
+                      9:00 AM – 6:00 PM (EST)
                     </p>
                   </div>
                 </li>

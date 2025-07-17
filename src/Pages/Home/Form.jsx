@@ -24,16 +24,16 @@ function ConsultationForm() {
   const [submitMessage, setSubmitMessage] = useState('');
 
   const specialtyOptions = [
-    'Cardiology',
-    'Dermatology',
-    'Family Medicine',
-    'Internal Medicine',
-    'Neurology',
-    'Orthopedics',
-    'Pediatrics',
-    'Psychiatry',
-    'Radiology',
-    'Surgery'
+    'Mental Health Services',
+    'Urgent Care Services',
+    'Home Care Facility',
+    'Rehabilitation Center',
+    'Primary Care Facility',
+    'Specialty Clinic',
+    'Hospice Care',
+    'Assisted Living Facility',
+    'Outpatient Surgery Center',
+    'Other Facility/Service'
   ];
 
   const healthcareTypeOptions = [
@@ -117,9 +117,9 @@ function ConsultationForm() {
                 <div>
                   <Select
                     size="large"
-                    placeholder="Please select a specialty"
+                    placeholder="Please select the category or service"
                     className="w-full"
-                    value={formData.specialty}
+                    value={formData.specialty || undefined}
                     onChange={(value) => handleInputChange('specialty', value)}
                   >
                     {specialtyOptions.map(option => (
@@ -133,9 +133,9 @@ function ConsultationForm() {
                 <div>
                   <Select
                     size="large"
-                    placeholder="Select Healthcare Type"
+                    placeholder="Please select the healthcare type"
                     className="w-full"
-                    value={formData.healthcareType}
+                    value={formData.healthcareType || undefined}
                     onChange={(value) => handleInputChange('healthcareType', value)}
                   >
                     {healthcareTypeOptions.map(option => (

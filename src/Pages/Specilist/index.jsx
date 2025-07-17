@@ -117,9 +117,11 @@ function Specialist() {
           <div className="text-center space-y-6 max-w-4xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">Specialized Medical Billing For Every Specialty</h1>
             <p className="text-gray-700 font-semibold text-base md:text-lg tracking-wider leading-relaxed">Every specialty has its own medical codes, payer rules, and workflow. We build a custom RCM strategy that actually fits your practice. Discover how Care Cycle Billing specialty-focused billing can improve your medical practice RCM objectives.</p>
-            <Button onClick={() => window.location.href = '/contact'} size="large">
+            <a href="tel:+16144656718" style={{textDecoration: 'none'}}>
+              <Button size="large">
                 TALK TO A BILLING EXPERT
-            </Button>
+              </Button>
+            </a>
           </div>
         </div>
     </div>

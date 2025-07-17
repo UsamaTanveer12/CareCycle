@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import CounterSection from "./counter";
 import About from "./About";
 import Services from "./Services";
@@ -7,6 +8,7 @@ import { Button } from "../../components";
 import ConsultationForm from '../Home/Form';
 
 function Billing() {
+  const navigate = useNavigate();
   return (
     <>
     <div className="relative bg-gradient-to-br from-blue-50 via-gray-50 to-blue-100 py-20" 
@@ -23,17 +25,16 @@ function Billing() {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Left Column - Content */}
           <div className="space-y-6">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              Medical Billing Services For{' '}
-              <span style={{ color: '#579db3' }}>Small Practssices</span>
+            <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 leading-tight">
+             Claim your first 1 hrs audit or consultation session{' '}
+              <span style={{ color: '#579db3' }}>in only $25.</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Your small practice runs on care, not claims, but billing headaches are stealing 
-              your time and profits. Denied claims, slow reimbursements, and endless 
-              paperwork shouldn't hold you back. Care Cycle Billing LLC secures your 
-              revenue reliably and efficiently so you can get back to medicine, not paperwork.
+              Will have a detailed discussion on AR 
+              including both patient and insurance and will offer a process 
+              to reduce this AR.
             </p>
-            <Button size="large">
+            <Button onClick={() => navigate('/contact')} size="large">
               Claim Your Free Audit
             </Button>
           </div>

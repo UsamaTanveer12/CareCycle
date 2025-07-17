@@ -3,73 +3,94 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowRight, Calendar, Clock, User, Tag } from 'lucide-react';
 import { Button } from "../../components";
 
+// Export blogPosts at the top level
+export const blogPosts = [
+  {
+    id: 1,
+    title: "Medical Billing and Coding Guidelines 2025",
+    excerpt: "CMS has released critical updates impacting medical billing and coding for 2025. Understand new documentation rules, code revisions, and payer requirements that will affect your practice's revenue cycle.",
+    image: "/assets/blog-1.jpg",
+    date: "January 15, 2025",
+    readTime: "5 min read",
+    author: "Sarah Johnson",
+    category: "Compliance",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "7 Advantages of Outsourcing Medical Billing & Denials",
+    excerpt: "Discover how outsourcing medical billing can transform your practice operations, reduce administrative burden, and improve revenue cycle management for sustainable growth.",
+    image: "/assets/blog-2.jpg",
+    date: "January 12, 2025",
+    readTime: "7 min read",
+    author: "Michael Chen",
+    category: "Business Strategy"
+  },
+  {
+    id: 3,
+    title: "What is Denial Management in Medical Billing?",
+    excerpt: "Learn comprehensive denial management strategies to reduce claim rejections, streamline appeals processes, and maximize your practice revenue with proven techniques.",
+    image: "/assets/blog-3.jpg",
+    date: "January 10, 2025",
+    readTime: "6 min read",
+    author: "Emily Rodriguez",
+    category: "Revenue Cycle"
+  },
+  {
+    id: 4,
+    title: "HIPAA Compliance in Modern Medical Billing",
+    excerpt: "Navigate the latest HIPAA requirements and ensure your billing processes maintain patient privacy while optimizing efficiency in an increasingly digital healthcare landscape.",
+    image: "/assets/blog-4.jpg",
+    date: "January 8, 2025",
+    readTime: "4 min read",
+    author: "David Thompson",
+    category: "Compliance"
+  },
+  {
+    id: 5,
+    title: "AI and Automation in Revenue Cycle Management",
+    excerpt: "Explore how artificial intelligence and automation are revolutionizing medical billing, reducing errors, and accelerating payment collection for healthcare providers.",
+    image: "/assets/blog-3.jpg",
+    date: "January 5, 2025",
+    readTime: "8 min read",
+    author: "Lisa Park",
+    category: "Technology"
+  },
+  {
+    id: 6,
+    title: "Prior Authorization Best Practices for 2025",
+    excerpt: "Master the prior authorization process with updated strategies that reduce delays, improve approval rates, and ensure seamless patient care delivery.",
+    image: "/assets/blog-6.jpg",
+    date: "January 3, 2025",
+    readTime: "5 min read",
+    author: "Robert Wilson",
+    category: "Operations"
+  },
+  {
+    id: 7,
+    title: "The Future of Telehealth Billing",
+    excerpt: "Telehealth is here to stay. Learn how to optimize your billing processes for virtual care and stay compliant with evolving payer requirements.",
+    image: "/assets/blog-7.jpg",
+    date: "January 2, 2025",
+    readTime: "6 min read",
+    author: "Anna Lee",
+    category: "Technology"
+  },
+  {
+    id: 8,
+    title: "Top 10 Medical Billing Mistakes to Avoid in 2025",
+    excerpt: "Avoid costly errors! Discover the most common medical billing mistakes and how to prevent them for a healthier revenue cycle.",
+    image: "/assets/blog-8.jpg",
+    date: "January 1, 2025",
+    readTime: "7 min read",
+    author: "John Smith",
+    category: "Compliance"
+  }
+];
+
 function Blog() {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState('All');
-  
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Medical Billing and Coding Guidelines 2025",
-      excerpt: "CMS has released critical updates impacting medical billing and coding for 2025. Understand new documentation rules, code revisions, and payer requirements that will affect your practice's revenue cycle.",
-      image: "assets/download.jpg",
-      date: "January 15, 2025",
-      readTime: "5 min read",
-      author: "Sarah Johnson",
-      category: "Compliance",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "7 Advantages of Outsourcing Medical Billing & Denials",
-      excerpt: "Discover how outsourcing medical billing can transform your practice operations, reduce administrative burden, and improve revenue cycle management for sustainable growth.",
-      image: "assets/download.jpg",
-      date: "January 12, 2025",
-      readTime: "7 min read",
-      author: "Michael Chen",
-      category: "Business Strategy"
-    },
-    {
-      id: 3,
-      title: "What is Denial Management in Medical Billing?",
-      excerpt: "Learn comprehensive denial management strategies to reduce claim rejections, streamline appeals processes, and maximize your practice revenue with proven techniques.",
-      image: "assets/download.jpg",
-      date: "January 10, 2025",
-      readTime: "6 min read",
-      author: "Emily Rodriguez",
-      category: "Revenue Cycle"
-    },
-    {
-      id: 4,
-      title: "HIPAA Compliance in Modern Medical Billing",
-      excerpt: "Navigate the latest HIPAA requirements and ensure your billing processes maintain patient privacy while optimizing efficiency in an increasingly digital healthcare landscape.",
-      image: "assets/download.jpg",
-      date: "January 8, 2025",
-      readTime: "4 min read",
-      author: "David Thompson",
-      category: "Compliance"
-    },
-    {
-      id: 5,
-      title: "AI and Automation in Revenue Cycle Management",
-      excerpt: "Explore how artificial intelligence and automation are revolutionizing medical billing, reducing errors, and accelerating payment collection for healthcare providers.",
-      image: "assets/download.jpg",
-      date: "January 5, 2025",
-      readTime: "8 min read",
-      author: "Lisa Park",
-      category: "Technology"
-    },
-    {
-      id: 6,
-      title: "Prior Authorization Best Practices for 2025",
-      excerpt: "Master the prior authorization process with updated strategies that reduce delays, improve approval rates, and ensure seamless patient care delivery.",
-      image: "assets/download.jpg",
-      date: "January 3, 2025",
-      readTime: "5 min read",
-      author: "Robert Wilson",
-      category: "Operations"
-    }
-  ];
 
   const categories = ["All", "Compliance", "Business Strategy", "Revenue Cycle", "Technology", "Operations"];
 
@@ -224,7 +245,7 @@ function Blog() {
                     </div>
                   </div>
                 </div>
-                <Button onClick={() => navigate('/contact')} size="small" className="self-start flex items-center gap-2">
+                <Button onClick={() => navigate(`/blog/${featuredPost.id}`)} size="small" className="self-start flex items-center gap-2">
                   Read Full Article
                   <ArrowRight className="w-4 h-4" />
                 </Button>
@@ -257,7 +278,7 @@ function Blog() {
                       </div>
                     </div>
                     <div className="p-6 flex-1 flex flex-col">
-                      <h3 className="text-lg font-bold text-gray-900 leading-tight mb-3 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-lg font-bold text-gray-900 leading-tight mb-3  transition-colors">
                         {post.title}
                       </h3>
                       <p className="text-gray-600 leading-relaxed mb-4 text-sm flex-1">
@@ -280,7 +301,7 @@ function Blog() {
                         </div>
                         <button 
                           type="button" 
-                          onClick={() => navigate('/contact')}
+                          onClick={() => navigate(`/blog/${post.id}`)}
                           className="text-sm font-semibold flex items-center gap-2 group-hover:gap-3 transition-all duration-300 cursor-pointer"
                           style={{color: '#579db3'}}
                         >

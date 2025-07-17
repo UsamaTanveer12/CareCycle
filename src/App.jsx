@@ -8,6 +8,7 @@ import Specilist from "./Pages/Specilist"
 import Privacy from "./Pages/Privacy"
 import Term from "./Pages/Term"
 import Blog from "./Pages/Blog"
+import SingleBlog from "./Pages/Blog/SingleBlog"
 import Contact from "./Pages/Contact"
 import Billing from "./Pages/Billing"
 import Coding from "./Pages/Coding"
@@ -49,6 +50,10 @@ function App() {
         {
           path: "blog",
           element: <Blog />
+        },
+        {
+          path: "blog/:id",
+          element: <SingleBlog />
         },
         {
           path: "contact",
