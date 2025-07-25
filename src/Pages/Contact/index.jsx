@@ -111,7 +111,7 @@ function Contact() {
                 <div className="container mx-auto lg:px-8 px-4 relative z-10">
                     <div className="text-center space-y-6">
                         <p className="text-green-500 font-semibold text-lg tracking-wider">Ready to Get Started?</p>
-                        <h1 className="text-2xl lg:text-4xl font-bold text-gray-900">Get in Touch with Care Cycle Billing</h1>
+                        <h1 className="text-2xl lg:text-4xl font-bold text-gray-900">Get in Touch with MediCycle Billing</h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Contact our expert team today to streamline your medical billing and maximize your revenue.
                         </p>
@@ -167,7 +167,7 @@ function Contact() {
                           
                             <div className="font-medium" style={{color: '#579db3'}}>
                                 <p>Monday – Friday</p>
-                                <p>9:00 AM – 6:00 PM (EST)</p>
+                                <p>9:00 AM – 6:00 PM (PST)</p>
                             </div>
                         </div>
                     </div>

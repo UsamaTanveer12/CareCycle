@@ -166,14 +166,13 @@ function Cta() {
                       Why Choose Us
                     </span>
                     <h2 className="lg:text-4xl text-2xl lg:text-left text-center font-bold text-gray-900 mt-4 leading-tight">
-                      More Reasons to Choose Care Cycle Billing Services Company
+                      More Reasons to Choose MediCycle Billing Services Company
                     </h2>
                   </div>
                   
                   <p className="text-gray-700 leading-relaxed lg:text-left text-center">
                     Choosing the right medical billing partner isn't just about outsourcing, it's about 
-                    finding a trusted ally that understands the nuances of your practice. At Care Cycle 
-                    Billing, we don't just process claims as projects – we approach revenue, reduce denials, 
+                    finding a trusted ally that understands the nuances of your practice. At MediCycle Billing, we don't just process claims as projects – we approach revenue, reduce denials, 
                     and ensure every patient experience is reflected.
                   </p>
                   

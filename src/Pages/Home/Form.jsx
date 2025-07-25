@@ -27,11 +27,11 @@ function ConsultationForm() {
     'Mental Health Services',
     'Urgent Care Services',
     'Home Care Facility',
-    'Rehabilitation Center',
+    'Dental Center',
     'Primary Care Facility',
-    'Specialty Clinic',
-    'Hospice Care',
-    'Assisted Living Facility',
+    
+    'Accupuncture ',
+    'Behavioral Health Facility',
     'Outpatient Surgery Center',
     'Other Facility/Service'
   ];
@@ -41,7 +41,7 @@ function ConsultationForm() {
     'Group Practice',
     'Hospital',
     'Clinic',
-    'Specialty Center',
+    'Internal Medicine',
     'Urgent Care',
     'Other'
   ];
@@ -254,7 +254,7 @@ function ConsultationForm() {
 
               {/* Description */}
               <p className="text-gray-700 text-lg leading-relaxed mb-12 max-w-lg mx-auto">
-                Unlock the true potential of your revenue cycle with a free consultation and billing audit from Care Cycle Billing. We'll review your current billing workflow, identify revenue leaks, and uncover opportunities for faster reimbursements and improved claim accuracy at no cost, no commitment. Whether you're a solo provider or a growing practice, our audit gives you clear insights and actionable steps to boost your bottom line.
+                Unlock the true potential of your revenue cycle with a free consultation and billing audit from MediCycle Billing. We'll review your current billing workflow, identify revenue leaks, and uncover opportunities for faster reimbursements and improved claim accuracy at no cost, no commitment. Whether you're a solo provider or a growing practice, our audit gives you clear insights and actionable steps to boost your bottom line.
               </p>
 
               

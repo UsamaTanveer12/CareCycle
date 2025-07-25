@@ -199,7 +199,7 @@ const MedicalCodingPage = () => {
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Miscoded claims aren't just billing errors, they're revenue killers. A single ICD-10 or CPT coding
                   mistake can trigger claim denials, delay payments, or even expose your hospital to audit risks. At
-                  Care Cycle Billing LLC, we fix the root problem: AAPC-certified coders meticulously translate your
+                  MediCycle Billing LLC, we fix the root problem: AAPC-certified coders meticulously translate your
                   clinical documentation into 100% accurate, audit-proof codes so you get paid faster and stay
                   compliant.
                 </p>
@@ -276,7 +276,7 @@ const MedicalCodingPage = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Medical coding errors don't just delay payments they erode revenue, trigger audits, and strain your
-              practice's cash flow. At Care Cycle Billing LLC, we understand that precise coding is the backbone of
+              practice's cash flow. At MediCycle Billing LLC, we understand that precise coding is the backbone of
               a healthy revenue cycle.
             </p>
           </div>
@@ -309,7 +309,7 @@ const MedicalCodingPage = () => {
             <div className="bg-gradient-to-br from-[#579db3] to-[#3d7a8c] rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Transform Your Revenue Cycle</h3>
               <p className="text-white opacity-80 mb-6">
-                With Care Cycle Billing LLC, your practice gains a strategic coding partner, not just a vendor. Let
+                With MediCycle Billing LLC, your practice gains a strategic coding partner, not just a vendor. Let
                 us transform your medical coding from a cost center into a profit-protecting asset.
               </p>
               <Button onClick={() => navigate('/contact')} size="large">
@@ -419,7 +419,7 @@ const MedicalCodingPage = () => {
               OIG-Aligned Coding Practices for Every Specialty and Setting
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Care Cycle Billing LLC delivers specialty-specific coding expertise optimized for your workflow,
+              MediCycle Billing LLC delivers specialty-specific coding expertise optimized for your workflow,
               patient population, and reimbursement requirements, ensuring maximum accuracy and revenue capture across
               all healthcare environments.
             </p>
@@ -680,7 +680,7 @@ const MedicalCodingPage = () => {
               OIG-Aligned Coding Practices for Every Specialty and Setting
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Care Cycle Billing LLC delivers specialty-specific coding expertise optimized for your workflow,
+              MediCycle Billing LLC delivers specialty-specific coding expertise optimized for your workflow,
               patient population, and reimbursement requirements, ensuring maximum accuracy and revenue capture across
               all healthcare environments.
             </p>
@@ -724,7 +724,7 @@ const MedicalCodingPage = () => {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Get a Free Billing Audit with No Strings Attached</h2>
           <p className="text-xl text-[#fff]/80 mb-8 max-w-3xl mx-auto">
-            Unlock the true potential of your revenue cycle with a free consultation and billing audit from CareCycle
+            Unlock the true potential of your revenue cycle with a free consultation and billing audit from MediCycle
             Medical Billing. We'll review your current billing workflow, identify revenue leaks, and uncover
             opportunities for faster reimbursements and improved claim accuracy at no cost, no commitment.
           </p>
@@ -755,11 +755,11 @@ const MedicalCodingPage = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Care Cycle Billing LLC Stands Apart in Medical Coding Excellence?
+              Why MediCycle Billing LLC Stands Apart in Medical Coding Excellence?
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Choosing the right medical coding partner impacts your revenue, compliance, and operational efficiency. At
-              Care Cycle Billing LLC, we combine deep industry expertise with cutting-edge technology to deliver
+              MediCycle Billing LLC, we combine deep industry expertise with cutting-edge technology to deliver
               unmatched accuracy, speed, and security.
             </p>
           </div>
@@ -788,7 +788,7 @@ const MedicalCodingPage = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4 text-[#579db3]">Care Cycle Billing LLC</h3>
+              <h3 className="text-2xl font-bold mb-4 text-[#579db3]">MediCycle Billing LLC</h3>
               <p className="text-gray-300 mb-6 max-w-md">
                 Leading medical coding and revenue cycle management services, trusted by healthcare providers nationwide
                 for over 15 years.
@@ -835,7 +835,7 @@ const MedicalCodingPage = () => {
           </div>
 
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <p>© 2024 Care Cycle Billing LLC. All rights reserved. HIPAA Compliant & Certified.</p>
+            <p>© 2024 MediCycle Billing LLC. All rights reserved. HIPAA Compliant & Certified.</p>
           </div>
         </div>
       </div> */}

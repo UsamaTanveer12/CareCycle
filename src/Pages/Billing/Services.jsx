@@ -149,7 +149,7 @@ function Services() {
           </h1>
           
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            At Care Cycle Billing LLC, we don't just process claims — we optimize every step of your revenue cycle 
+            At MediCycle Billing LLC, we don't just process claims — we optimize every step of your revenue cycle 
             to maximize collections and minimize headaches. Our cutting-edge approach combines technology with deep healthcare expertise.
           </p>
         </div>

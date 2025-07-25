@@ -21,7 +21,7 @@ function Para() {
               Simplify Billing, Boost Your Collections, and Stay Fully Compliant With HIPAA
             </h2>
             <p className="text-white text-lg leading-relaxed opacity-90">
-              Let's Build a smarter revenue cycle for your practice and get started with Care Cycle Billing today.
+              Let's Build a smarter revenue cycle for your practice and get started with MediCycle Billing today.
             </p>
             <div className="pt-4">
               <Button 

@@ -125,7 +125,7 @@ const MedicalBillingServices = () => {
           
           <div className="max-w-4xl mx-auto relative px-4 sm:px-0">
             <p className="text-gray-700 text-base sm:text-lg lg:text-xl leading-relaxed">
-              At Care Cycle Billing, we don't believe in one-size-fits-all. Every specialty has its own codes, compliance needs, and payer rules. We provide specialty-specific billing services that align with your clinical workflow.
+              At MediCycle Billing, we don't believe in one-size-fits-all. Every specialty has its own codes, compliance needs, and payer rules. We provide specialty-specific billing services that align with your clinical workflow.
             </p>
           </div>
         </div>

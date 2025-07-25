@@ -162,7 +162,7 @@ function Privacy() {
                             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 sm:p-6 mb-6 sm:mb-8">
                                 <p className="text-blue-800 text-sm font-medium mb-2">Last Updated: January 2025</p>
                                 <p className="text-blue-700 text-sm sm:text-base">
-                                    This Privacy Policy explains how Care Cycle Billing collects, uses, protects, and shares your information when you use our services or visit our website.
+                                    This Privacy Policy explains how MediCycle Billing collects, uses, protects, and shares your information when you use our services or visit our website.
                                 </p>
                             </div>
 
@@ -207,7 +207,7 @@ function Privacy() {
                             {/* How We Use Information */}
                             <section id="how-we-use" className="mb-8 sm:mb-12">
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 border-b-2 border-green-500 pb-2">How We Use Your Information</h2>
-                                <p className="text-gray-700 mb-4 sm:mb-6 text-sm sm:text-base">Care Cycle Billing uses your information to:</p>
+                                <p className="text-gray-700 mb-4 sm:mb-6 text-sm sm:text-base">MediCycle Billing uses your information to:</p>
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                                     <div className="bg-white border border-gray-200 rounded-lg p-4 sm:p-6">
                                         <ul className="space-y-3 text-gray-700 text-sm sm:text-base">
@@ -249,7 +249,7 @@ function Privacy() {
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 border-b-2 border-green-500 pb-2">HIPAA Compliance & Data Protection</h2>
                                 <div className="bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-lg p-4 sm:p-6 mb-4 sm:mb-6">
                                     <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                                        <strong>Care Cycle Billing is fully compliant with the Health Insurance Portability and Accountability Act (HIPAA).</strong> We implement strict administrative, physical, and technical safeguards to:
+                                        <strong>MediCycle Billing is fully compliant with the Health Insurance Portability and Accountability Act (HIPAA).</strong> We implement strict administrative, physical, and technical safeguards to:
                                     </p>
                                 </div>
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
@@ -366,7 +366,7 @@ function Privacy() {
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 border-b-2 border-green-500 pb-2">Third-Party Links</h2>
                                 <div className="bg-red-50 border border-red-200 rounded-lg p-4 sm:p-6">
                                     <p className="text-gray-700 text-sm sm:text-base">
-                                        Our website may contain links to third-party websites or tools. Care Cycle Billing is not responsible for the privacy practices or content of these sites. We recommend reviewing their privacy policies before providing any personal information.
+                                        Our website may contain links to third-party websites or tools. MediCycle Billing is not responsible for the privacy practices or content of these sites. We recommend reviewing their privacy policies before providing any personal information.
                                     </p>
                                 </div>
                             </section>

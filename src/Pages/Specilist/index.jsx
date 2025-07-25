@@ -116,7 +116,7 @@ function Specialist() {
         <div className="container mx-auto px-4 md:px-8 relative z-10 flex items-center justify-center min-h-[40vh]">
           <div className="text-center space-y-6 max-w-4xl">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">Specialized Medical Billing For Every Specialty</h1>
-            <p className="text-gray-700 font-semibold text-base md:text-lg tracking-wider leading-relaxed">Every specialty has its own medical codes, payer rules, and workflow. We build a custom RCM strategy that actually fits your practice. Discover how Care Cycle Billing specialty-focused billing can improve your medical practice RCM objectives.</p>
+            <p className="text-gray-700 font-semibold text-base md:text-lg tracking-wider leading-relaxed">Every specialty has its own medical codes, payer rules, and workflow. We build a custom RCM strategy that actually fits your practice. Discover how MediCycle Billing specialty-focused billing can improve your medical practice RCM objectives.</p>
             <a href="tel:+16144656718" style={{textDecoration: 'none'}}>
               <Button size="large">
                 TALK TO A BILLING EXPERT
@@ -281,7 +281,7 @@ function Specialist() {
 
               {/* Description */}
               <p className="text-gray-700 text-lg leading-relaxed mb-12 max-w-[700px] ">
-               At Care Cycle Billing, our coders are more than certified. They're specialty-trained. Each coder understands your field, from documentation to payer preferences, ensuring every claim speaks your clinical language fluently. 
+               At MediCycle Billing, our coders are more than certified. They're specialty-trained. Each coder understands your field, from documentation to payer preferences, ensuring every claim speaks your clinical language fluently. 
 
 From complex CPT pairings to pre-auth management and smart appeal strategies, we apply intelligent coding logic tailored to your procedures. Our process is enhanced by real-time data patterns and compliance, reducing denials before they start.
 

@@ -10,12 +10,12 @@ function Footer() {
             {/* Company Info Section */}
             <div className="col-span-1 sm:col-span-2 lg:col-span-1 text-center sm:text-left">
               <img 
-                alt="Care Cycle Billing Logo" 
+                alt="MediCycle Billing Logo" 
                 className="w-[100px] sm:w-[120px] mb-4 sm:mb-6 mx-auto sm:mx-0" 
                 src="/assets/white.png" 
               />
               <p className="text-white text-sm sm:text-[16px] mb-4 sm:mb-6 leading-relaxed px-2 sm:px-0">
-                Care Cycle Billing provides reliable, end-to-end revenue cycle solutions. We support small practices and specialty groups with compliant, efficient billing.
+                MediCycle Billing provides reliable, end-to-end revenue cycle solutions. We support small practices and specialty groups with compliant, efficient billing.
               </p>
               <div className="flex justify-center sm:justify-start space-x-4">
                 <a href="https://linkedin.com" className="text-white hover:text-[#eb2978] transition-colors p-1">
@@ -149,10 +149,10 @@ function Footer() {
                   <div className="text-center sm:text-left">
                     <p className="font-medium text-white text-sm sm:text-base">Mail Address</p>
                     <a 
-                      href="mailto:contact@CareCyclebilling.com" 
+                      href="mailto:contact@medicyclebilling.com" 
                       className="text-white hover:text-[#eb2978] transition-colors text-sm sm:text-base break-words"
                     >
-                      contact@CareCyclebilling.com
+                      contact@medicyclebilling.com
                     </a>
                   </div>
                 </li>
@@ -164,7 +164,7 @@ function Footer() {
                   <div className="text-center sm:text-left">
                     <p className="font-medium text-white text-sm sm:text-base">Monday – Friday</p>
                     <p className="text-white text-sm sm:text-base leading-relaxed">
-                      9:00 AM – 6:00 PM (EST)
+                      9:00 AM – 6:00 PM (PST)
                     </p>
                   </div>
                 </li>
@@ -176,7 +176,7 @@ function Footer() {
           <div className="mt-8 sm:mt-12 lg:mt-16 pt-6 sm:pt-8 border-t border-[#fff]/40">
             <div className="flex flex-col items-center space-y-4 md:flex-row md:justify-between md:space-y-0">
               <p className="text-white text-xs sm:text-sm text-center md:text-left">
-                © 2025 Care Cycle Billing. All Rights Reserved.
+                © 2025 MediCycle Billing. All Rights Reserved.
               </p>
               <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 lg:space-x-6 items-center">
                 <Link 

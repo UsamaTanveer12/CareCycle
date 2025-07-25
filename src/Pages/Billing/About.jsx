@@ -126,7 +126,7 @@ function About() {
                 </h2>
                 
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  You didn't go into medicine to fight with insurance claims. Yet here you are, drowning in paperwork, errors, and watching 15-30% of your revenue fall through the cracks. Care Cycle Billing helps small practices because we understand your unique challenges.
+                  You didn't go into medicine to fight with insurance claims. Yet here you are, drowning in paperwork, errors, and watching 15-30% of your revenue fall through the cracks. MediCycle Billing helps small practices because we understand your unique challenges.
                 </p>
               </div>
               

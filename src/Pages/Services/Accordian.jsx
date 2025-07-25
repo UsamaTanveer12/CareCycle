@@ -55,7 +55,7 @@ function Accordion() {
               </div>
               <div className="space-y-6">
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Care Cycle Billing provides end-to-end billing support with RCM expert behind every claim, code, and collection. From insurance verification to denial recovery, our team takes full ownership of the billing process so nothing gets lost in handoffs, and your practice gets paid to the patient services.
+                  MediCycle Billing provides end-to-end billing support with RCM expert behind every claim, code, and collection. From insurance verification to denial recovery, our team takes full ownership of the billing process so nothing gets lost in handoffs, and your practice gets paid to the patient services.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">
                   What sets us apart is how seamlessly we integrate into your systems. We work within your EHR, follow your clinical workflows, and align with your financial goals. Bringing certified coders, AR analysts, and compliance experts who function as an extension of your team. Schedule a quick call with your RCM expert today.

@@ -174,7 +174,7 @@ const Credentialing = () => {
                 </h1>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Physicians lose thousands in delayed reimbursements due to credentialing errors, missing documents, or
-                  slow insurer responses. At Care Cycle Billing MS, we specialize in accurate healthcare
+                  slow insurer responses. At MediCycle Billing MS, we specialize in accurate healthcare
                   credentialing services, ensuring your providers are fully enrolled, compliant, and ready to bill
                   without denials or costly delays.
                 </p>
@@ -224,7 +224,7 @@ const Credentialing = () => {
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Why do 72% of providers face payment delays? Because traditional credentialing is a maze of expired
-              documents, insurer backlogs, and sudden audits. At Care Cycle Billing MS, our medical credentialing
+              documents, insurer backlogs, and sudden audits. At MediCycle Billing MS, our medical credentialing
               services cut through the chaos, verifying licenses, tracking submissions, and accelerating approvals so
               you stop sacrificing revenue to bureaucracy.
             </p>
@@ -354,7 +354,7 @@ const Credentialing = () => {
               Unmatched Credentialing Expertise Across All Payer Types
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              At Care Cycle Billing MS, we bring deep regulatory knowledge and proven processes to streamline every
+              At MediCycle Billing MS, we bring deep regulatory knowledge and proven processes to streamline every
               aspect of provider credentialing. Our team specializes in navigating the distinct requirements of
               government programs while optimizing commercial insurance enrollments.
             </p>
@@ -389,7 +389,7 @@ const Credentialing = () => {
                 Reliable Healthcare Credentialing Solutions You Can Trust
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                At Care Cycle Billing MS, we understand that medical practice credentialing demands both precision
+                At MediCycle Billing MS, we understand that medical practice credentialing demands both precision
                 and protection. Our healthcare credentialing solutions are built on enterprise-grade security protocols,
                 ensuring your providers' sensitive data remains confidential throughout the enrollment process.
               </p>
@@ -432,7 +432,7 @@ const Credentialing = () => {
               Why Leading Healthcare Providers Choose Our Credentialing Services
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Care Cycle Billing MS stands out by streamlining approvals, ensuring strict compliance, and maximizing
+              MediCycle Billing MS stands out by streamlining approvals, ensuring strict compliance, and maximizing
               revenue through precise credentialing — not just processing applications.
             </p>
           </div>
@@ -465,7 +465,7 @@ const Credentialing = () => {
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             Why Wait? Every day without proper credentialing means lost revenue, delayed reimbursements, and missed
-            opportunities. At Care Cycle Billing MS, we take the hassle out of medical credentialing and provider
+            opportunities. At MediCycle Billing MS, we take the hassle out of medical credentialing and provider
             enrollment.
           </p>
 

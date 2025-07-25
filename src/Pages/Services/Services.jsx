@@ -13,7 +13,7 @@ function Services() {
                   Medical Billing and Revenue Cycle Management (RCM)
                 </h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  From appointment to payment, Care Cycle Billing manages your entire revenue cycle, 
+                  From appointment to payment, MediCycle Billing manages your entire revenue cycle, 
                   eligibility checks, coding, scrubbing, claim submission, patient denials, and reporting.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed">

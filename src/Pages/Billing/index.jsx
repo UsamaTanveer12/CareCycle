@@ -26,8 +26,8 @@ function Billing() {
           {/* Left Column - Content */}
           <div className="space-y-6">
             <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 leading-tight">
-             Claim your first 1 hrs audit or consultation session{' '}
-              <span style={{ color: '#579db3' }}>in only $25.</span>
+              Claim your first 1 hrs audit or consultation session{' '}
+              <span style={{ color: '#579db3' }}>in only $10.</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
               Will have a detailed discussion on AR 

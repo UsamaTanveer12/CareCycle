@@ -119,7 +119,7 @@ const MedicalBillingLanding = () => {
                 You didn't go through years of medical training to spend your time negotiating with insurance companies. Yet denied claims continue to demand your attention and drain your resources.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Small practices lose an average of $7-15k in annual revenue due to billing inefficiencies. Many don't realize how much revenue is slipping through the gaps. At Care Cycle Billing, we help you recover that lost revenue. Our billing specialists understand payer systems and speak their language.
+                Small practices lose an average of $7-15k in annual revenue due to billing inefficiencies. Many don't realize how much revenue is slipping through the gaps. At MediCycle Billing, we help you recover that lost revenue. Our billing specialists understand payer systems and speak their language.
               </p>
               <p className="text-lg text-gray-600">
                 We turn denials into payments through precise claim appeals and thorough documentation. We don't just handle billing, we help you take back control of your time, your income, and your peace of training.
@@ -145,7 +145,7 @@ const MedicalBillingLanding = () => {
                 Payer-Specific Billing Experts Who Speak Insurance Fluently
               </h2>
               <p className="text-lg mb-8 text-blue-100">
-                Let's be honest: 35% of claim denials happen simply because billing teams don't know each insurer's secret rules. At Care Cycle Billing LLC, our specialists live in the complexities of Medicare's ever-changing LCDs to UnitedHealthcare's prior auth maze. We don't just submit claims - we engineer them knowing exactly how to navigate.
+                Let's be honest: 35% of claim denials happen simply because billing teams don't know each insurer's secret rules. At MediCycle Billing LLC, our specialists live in the complexities of Medicare's ever-changing LCDs to UnitedHealthcare's prior auth maze. We don't just submit claims - we engineer them knowing exactly how to navigate.
               </p>
               <button onClick={() => navigate('/contact')} className="bg-white text-[#579db3] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer">
                 TALK TO AN EXPERT
@@ -222,7 +222,7 @@ const MedicalBillingLanding = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Care Cycle Billing LLC is the Right Partner for Your Small Practice
+              Why MediCycle Billing LLC is the Right Partner for Your Small Practice
             </h2>
             <p className="text-lg text-gray-600">
               Small practices deserve billing experts who fight for their revenue.<br />
@@ -258,7 +258,7 @@ const MedicalBillingLanding = () => {
             Get a Free Billing Audit with No Strings Attached
           </h2>
           <p className="text-lg text-gray-600 mb-12 max-w-3xl mx-auto">
-            Unlock the true potential of your revenue cycle with a free consultation and billing audit from Care Cycle Billing. We'll review your current billing workflow, identify revenue leaks, and uncover opportunities for faster reimbursements and improved cash flow. Whether you're considering a new billing service provider or a growing practice, our audit gives you clear insights and actionable next steps to boost your bottom line.
+            Unlock the true potential of your revenue cycle with a free consultation and billing audit from MediCycle Billing. We'll review your current billing workflow, identify revenue leaks, and uncover opportunities for faster reimbursements and improved cash flow. Whether you're considering a new billing service provider or a growing practice, our audit gives you clear insights and actionable next steps to boost your bottom line.
           </p>
         </div>
       </div>

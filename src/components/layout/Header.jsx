@@ -85,14 +85,14 @@ function Header() {
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
-            <a href="mailto:contact@carecyclebilling.com" className="hover:text-gray-200 transition-colors">
-              contact@carecyclebilling.com
+            <a href="mailto:contact@medicyclebilling.com" className="hover:text-gray-200 transition-colors">
+              contact@medicyclebilling.com
             </a>
           </div>
           <div className="flex items-center gap-2 text-sm">
             <Clock className="w-4 h-4 flex-shrink-0" />
             <span>Monday – Friday</span>
-            <span>9:00 AM – 6:00 PM (EST)</span>
+            <span>9:00 AM – 6:00 PM (PST)</span>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@ function Header() {
             <div className="flex items-center py-2">
               <Link to="/" onClick={closeMobileMenu}>
                 <img 
-                  alt="Care Cycle Billing Logo" 
+                  alt="MediCycle Billing Logo" 
                   className="w-[80px] sm:w-[90px] lg:w-[90px] h-auto" 
                   src="/assets/logo.png" 
                 />
@@ -254,7 +254,7 @@ function Header() {
             <div className="flex items-center justify-between p-2 border-b border-gray-200">
               <Link to="/" onClick={closeMobileMenu}>
                 <img 
-                  alt="Care Cycle Billing Logo" 
+                  alt="MediCycle Billing Logo" 
                   className="w-[80px] h-auto" 
                   src="/assets/logo.png" 
                 />
@@ -396,11 +396,11 @@ function Header() {
                         </svg>
                         <span>(614) 465-6718</span>
                       </a>
-                      <a href="mailto:contact@carecyclebilling.com" className="flex items-center space-x-2 hover:text-[#eb2978] transition-colors">
+                      <a href="mailto:contact@medicyclebilling.com" className="flex items-center space-x-2 hover:text-[#eb2978] transition-colors">
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
-                        <span className="break-all">contact@carecyclebilling.com</span>
+                        <span className="break-all">contact@medicyclebilling.com</span>
                       </a>
                     </div>
                   </div>

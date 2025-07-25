@@ -40,7 +40,7 @@ function Parallax() {
               </h2>
               <p className="text-white text-lg leading-relaxed opacity-90">
                 Work with a billing partner that understands your workflow, your challenges, and your goals. 
-                Care Cycle Billing helps practices run smoother, get paid faster, and grow stronger.
+                MediCycle Billing helps practices run smoother, get paid faster, and grow stronger.
               </p>
               <div className="pt-4">
                 <Button 

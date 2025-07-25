@@ -8,7 +8,7 @@ function Special() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Specialties We Bill</h2>
           <p className="text-gray-700 text-lg max-w-4xl mx-auto leading-relaxed">
-            At Care Cycle Billing, we specialize in solving the unique billing challenges of each specialty. Our AAPC-certified team delivers customized solutions that improve your practice's efficiency and financial outcomes.
+            At MediCycle Billing, we specialize in solving the unique billing challenges of each specialty. Our AAPC-certified team delivers customized solutions that improve your practice's efficiency and financial outcomes.
           </p>
         </div>
 

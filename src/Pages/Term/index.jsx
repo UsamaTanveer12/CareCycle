@@ -165,7 +165,7 @@ function Term() {
                             <div className="border-2 rounded-lg p-4 sm:p-6 mb-6 sm:mb-8" style={{backgroundColor: '#f0f6ff', borderColor: '#579db3'}}>
                                 <p className="text-sm font-medium mb-2" style={{color: '#579db3'}}>Last Updated: January 2025</p>
                                 <p className="text-gray-700 text-sm sm:text-base">
-                                    These Terms and Conditions govern your use of Care Cycle Billing's services and establish the legal framework for our professional relationship.
+                                    These Terms and Conditions govern your use of MediCycle Billing's services and establish the legal framework for our professional relationship.
                                 </p>
                             </div>
 
@@ -174,7 +174,7 @@ function Term() {
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 pb-2" style={{borderBottom: `2px solid #579db3`}}>Service Agreement</h2>
                                 <div className="border-2 rounded-lg p-4 sm:p-6" style={{backgroundColor: '#f8fafb', borderColor: '#579db3'}}>
                                     <p className="text-gray-700 text-sm sm:text-base">
-                                        By using services provided by Care Cycle Billing, you agree to enter into a professional agreement for medical billing and/or revenue cycle management services. A separate Service Agreement may be signed to define the scope of work, pricing, timelines, and responsibilities between both parties.
+                                        By using services provided by MediCycle Billing, you agree to enter into a professional agreement for medical billing and/or revenue cycle management services. A separate Service Agreement may be signed to define the scope of work, pricing, timelines, and responsibilities between both parties.
                                     </p>
                                 </div>
                             </section>
@@ -202,7 +202,7 @@ function Term() {
                                 </div>
                                 <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 sm:p-6">
                                     <p className="text-gray-700 text-sm sm:text-base">
-                                        <strong>Important:</strong> Failure to provide such information may delay processing or impact claim outcomes, for which CareCycle MBS is not liable.
+                                        <strong>Important:</strong> Failure to provide such information may delay processing or impact claim outcomes, for which MediCycle MBS is not liable.
                                     </p>
                                 </div>
                             </section>
@@ -220,7 +220,7 @@ function Term() {
                                         <div className="text-center sm:text-left">
                                             <h3 className="text-lg sm:text-xl font-semibold mb-3" style={{color: '#579db3'}}>Full HIPAA Compliance Commitment</h3>
                                             <p className="text-gray-700 text-sm sm:text-base">
-                                                Care Cycle Billing is committed to protecting patient privacy and complies fully with the Health Insurance Portability and Accountability Act (HIPAA). All client data, patient records, and communication are handled through secure, encrypted channels, and we enforce strict internal policies to ensure confidentiality and data integrity.
+                                                MediCycle Billing is committed to protecting patient privacy and complies fully with the Health Insurance Portability and Accountability Act (HIPAA). All client data, patient records, and communication are handled through secure, encrypted channels, and we enforce strict internal policies to ensure confidentiality and data integrity.
                                             </p>
                                         </div>
                                     </div>
@@ -251,7 +251,7 @@ function Term() {
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 pb-2" style={{borderBottom: `2px solid #579db3`}}>Limitation of Liability</h2>
                                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 sm:p-6 mb-4 sm:mb-6">
                                     <p className="text-gray-700 mb-4 text-sm sm:text-base">
-                                        Care Cycle Billing will perform all services with professional care and industry-standard practices. However, we are not liable for any delays, denials, or revenue losses resulting from:
+                                        MediCycle Billing will perform all services with professional care and industry-standard practices. However, we are not liable for any delays, denials, or revenue losses resulting from:
                                     </p>
                                 </div>
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
@@ -309,7 +309,7 @@ function Term() {
                                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 pb-2" style={{borderBottom: `2px solid #579db3`}}>Website Use</h2>
                                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 sm:p-6">
                                     <p className="text-gray-700 text-sm sm:text-base">
-                                        The content on this website is for informational purposes only. Care Cycle Billing reserves the right to update, modify, or remove content without notice. Unauthorized use, data scraping, or misuse of any content is strictly prohibited.
+                                        The content on this website is for informational purposes only. MediCycle Billing reserves the right to update, modify, or remove content without notice. Unauthorized use, data scraping, or misuse of any content is strictly prohibited.
                                     </p>
                                 </div>
                             </section>
@@ -335,7 +335,7 @@ function Term() {
                                             </svg>
                                         </div>
                                         <p className="text-gray-700 text-sm sm:text-base text-center sm:text-left">
-                                            These Terms shall be governed and interpreted in accordance with the laws of the state in which Care Cycle Billing is registered, without regard to its conflict of law provisions.
+                                            These Terms shall be governed and interpreted in accordance with the laws of the state in which MediCycle Billing is registered, without regard to its conflict of law provisions.
                                         </p>
                                     </div>
                                 </div>
@@ -359,7 +359,7 @@ function Term() {
                                     </div>
                                     <div className="text-center mt-4 sm:mt-6 pt-4 sm:pt-6 border-t-2" style={{borderColor: '#579db3'}}>
                                         <p className="text-gray-600 text-sm sm:text-base">
-                                            <strong>Business Hours:</strong> Monday – Friday, 9:00 AM – 6:00 PM (EST)
+                                            <strong>Business Hours:</strong> Monday – Friday, 9:00 AM – 6:00 PM (PST)
                                         </p>
                                     </div>
                                 </div>

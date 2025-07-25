@@ -280,7 +280,7 @@ function Home() {
               </h1>
               <div className="space-y-4 max-w-xl mx-auto lg:mx-0">
                 <p className="text-gray-600 text-base md:text-lg leading-relaxed text-center lg:text-left">
-                  Care Cycle Billing delivers complete, transparent, and compliant billing services that are designed for independent providers, specialty groups, and fast-growing clinics.
+                  MediCycle Billing delivers complete, transparent, and compliant billing services that are designed for independent providers, specialty groups, and fast-growing clinics.
                 </p>
               </div>
             </div>
@@ -443,76 +443,12 @@ function Home() {
      <div className="bg-[#f7f9fb]">
         <div className="container mx-auto lg:px-8 px-3  lg:py-20 sm:px-4 md:px-8 py-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center justify-center">
-            <div className="lg:col-span-5 space-y-8 flex flex-col items-center justify-center">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="bg-[#579db3] p-5 text-white">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="bg-opacity-20 p-2 rounded">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        width="24" 
-                        height="24" 
-                        viewBox="0 0 24 24" 
-                        fill="none" 
-                        stroke="currentColor" 
-                        strokeWidth="2" 
-                        strokeLinecap="round" 
-                        strokeLinejoin="round" 
-                        className="lucide lucide-chart-column text-xl" 
-                        aria-hidden="true"
-                      >
-                        <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
-                        <path d="M18 17V9"></path>
-                        <path d="M13 17V5"></path>
-                        <path d="M8 17v-3"></path>
-                      </svg>
-                    </div>
-                    <h2 className="text-xl lg:text-2xl font-bold">Revenue Loss Analyzer</h2>
-                  </div>
-                  <p className="text-white text-opacity-90">Enter your data to estimate your revenue loss</p>
-                </div>
-                <div className="p-6 space-y-6">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Total Claims Submitted (per month)</label>
-                    <input 
-                      placeholder="e.g. 500" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3] outline-none transition-colors" 
-                      type="text" 
-                      defaultValue=""
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Number of Denials (per month)</label>
-                    <input 
-                      placeholder="e.g. 50" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3] outline-none transition-colors" 
-                      type="text" 
-                      defaultValue=""
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Average Claim Value ($)</label>
-                    <input 
-                      placeholder="e.g. 200" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3] outline-none transition-colors" 
-                      type="text" 
-                      defaultValue=""
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Average AR Days</label>
-                    <input 
-                      placeholder="e.g. 45" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#579db3] focus:border-[#579db3] outline-none transition-colors" 
-                      type="text" 
-                      defaultValue=""
-                    />
-                  </div>
-                  <Button onClick={() => navigate('/contact')} fullWidth size="large">
-                    Estimate Revenue Loss
-                  </Button>
-                </div>
-              </div>
+            <div className="lg:col-span-5 flex justify-center">
+              <img 
+                alt="What's Holding Your Practice Back?" 
+                className="w-full max-w-lg h-auto object-contain" 
+                src="/assets/info.webp"
+              />
             </div>
             
             <div className="lg:col-span-7 space-y-6 flex flex-col justify-center">
@@ -545,7 +481,7 @@ function Home() {
                   <span className="text-gray-700">Regulatory Compliance</span>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed text-center lg:text-left">At Care Cycle Billing, we understand these pressures because we've helped practices just like yours turn them around. Whether you're a solo provider or managing multiple locations, we bring clarity, consistency, and control back to your revenue cycle.</p>
+              <p className="text-gray-700 leading-relaxed text-center lg:text-left">At MediCycle Billing, we understand these pressures because we've helped practices just like yours turn them around. Whether you're a solo provider or managing multiple locations, we bring clarity, consistency, and control back to your revenue cycle.</p>
               <Button onClick={() => navigate('/contact')} size="large">
                 Get Your Free Revenue Review
               </Button>
@@ -629,7 +565,7 @@ function Home() {
         <div className="container mx-auto px-3 sm:px-4 md:px-8 py-12 md:py-20">
           <div className="text-center mb-16">
             <h2 className="lg:text-4xl text-2xl text-center  font-bold text-gray-900 mb-6">
-              What Sets Care Cycle Billing Apart
+              What Sets MediCycle Billing Apart
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed max-w-4xl mx-auto">
               Our performance is measured by the numbers that matter to your practice: 
@@ -730,7 +666,7 @@ function Home() {
               </div>
               
               <p className="text-gray-700 leading-relaxed text-center lg:text-left">
-                With Care Cycle Billing, you gain a dedicated partner who knows how to collect both insurance and patient payments, stay compliant, and support your growth. We're built to scale with you whether you're a solo provider or a multi-specialty clinic.
+                With MediCycle Billing, you gain a dedicated partner who knows how to collect both insurance and patient payments, stay compliant, and support your growth. We're built to scale with you whether you're a solo provider or a multi-specialty clinic.
               </p>
               
               <Button onClick={() => navigate('/contact')}>

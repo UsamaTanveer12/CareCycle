@@ -16,7 +16,7 @@ function About() {
         <div className="container mx-auto lg:px-8 px-4 relative z-10">
           <div className="text-center space-y-6">
             <p className="text-green-500 font-semibold text-lg tracking-wider">Built For Providers. Driven By Results.</p>
-            <h1 className="text-2xl lg:text-4xl font-bold text-gray-900">About Care Cycle Billing</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold text-gray-900">About MediCycle Billing</h1>
             <div className="flex items-center justify-center gap-2 text-gray-700 mt-8">
               <span className="font-medium hover:text-green-500 transition-colors cursor-pointer">
                 Home
@@ -52,7 +52,7 @@ function About() {
             
             <div className="space-y-6">
               <p className="text-gray-700 text-lg leading-relaxed">
-                At Care Cycle Billing, we understand that no two practices are alike. Whether you're a solo provider managing every detail or a multi-location group juggling multiple payers and specialties, our revenue cycle solutions scale to fit your workflow, not the other way around.
+                At MediCycle Billing, we understand that no two practices are alike. Whether you're a solo provider managing every detail or a multi-location group juggling multiple payers and specialties, our revenue cycle solutions scale to fit your workflow, not the other way around.
               </p>
               
               <p className="text-gray-700 text-lg leading-relaxed">
@@ -79,7 +79,7 @@ function About() {
               </div>
               
               <p className="text-gray-700 text-lg leading-relaxed">
-                We're here to make billing seamless, compliant, and profitable. With Care Cycle Billing, you get paid faster, with fewer issues, and more freedom to focus on what truly matters: patient care.
+                We're here to make billing seamless, compliant, and profitable. With MediCycle Billing, you get paid faster, with fewer issues, and more freedom to focus on what truly matters: patient care.
               </p>
               
               <div className="pt-4">
